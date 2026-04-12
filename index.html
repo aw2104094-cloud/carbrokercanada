@@ -90,9 +90,11 @@
 
     <!-- Vercel Web Analytics -->
     <script>
-      window.va = window.va || function () { 
-        (window.vaq = window.vaq || []).push(arguments); 
-      };
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
 
@@ -3404,6 +3406,12 @@
       // ===== FORM SUBMISSION =====
       function handleSubmit(e) {
         e.preventDefault();
+
+        // Show loading state on button
+        var payBtn = document.querySelector(".btn-pay");
+        payBtn.disabled = true;
+        payBtn.textContent = "Submitting... Please wait";
+        payBtn.style.opacity = "0.7";
 
         var form = document.getElementById("brokerForm");
         var formData = new FormData(form);
