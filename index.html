@@ -1,0 +1,3739 @@
+<!-- IMPORTANT: This site requires HTTPS. Enable a free SSL certificate via Let's Encrypt through your hosting provider (available on cPanel, Cloudflare, or any modern host) before going live. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarBrokerCanada — Buy Any Car in Canada, Stress-Free</title>
+    <meta
+      name="description"
+      content="Canada's trusted car broker service. We find, negotiate, and secure your perfect vehicle — all provinces except BC. Flat-fee car buying service with zero dealership stress."
+    />
+    <meta
+      name="keywords"
+      content="car broker Canada, buy a car Canada, Canadian car buying service, car buying broker, vehicle broker Canada"
+    />
+    <meta
+      property="og:title"
+      content="CarBrokerCanada — Buy Any Car in Canada, Stress-Free"
+    />
+    <meta
+      property="og:description"
+      content="Flat-fee car broker service for Canadians. We negotiate, handle paperwork, and deliver your dream car. Zero stress."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://carbrokercanada.ca" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&h=630&fit=crop"
+    />
+    <link rel="canonical" href="https://carbrokercanada.ca" />
+
+    <!-- Google Analytics 4 -->
+    <!-- Replace G-XXXXXXX with your GA4 Measurement ID -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXX");
+    </script>
+
+    <!-- Facebook Pixel -->
+    <!-- Replace XXXXXXXXXXXXXXXXXX with your Facebook Pixel ID -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "XXXXXXXXXXXXXXXXXX");
+      fbq("track", "PageView");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <style>
+      /* ========== RESET & BASE ========== */
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        color: #07172e;
+        background: #f5f3ef;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Playfair Display", serif;
+        line-height: 1.2;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      ul {
+        list-style: none;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ========== ANIMATIONS ========== */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ========== NAVIGATION ========== */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(7, 23, 46, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 0 24px;
+        transition: box-shadow 0.3s ease;
+      }
+      .navbar.scrolled {
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+      }
+      .nav-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 72px;
+      }
+      .nav-logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #fff;
+      }
+      .nav-logo span {
+        color: #d42b2b;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+      .nav-links a {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+      .nav-links a:hover {
+        color: #c8a96e;
+      }
+      .nav-book-call {
+        color: #c8a96e;
+        font-weight: 600;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        transition: color 0.3s;
+      }
+      .nav-book-call:hover {
+        color: #fff;
+      }
+      .nav-cta {
+        background: #d42b2b;
+        color: #fff !important;
+        padding: 10px 24px;
+        border-radius: 6px;
+        font-weight: 600;
+        transition:
+          background 0.3s,
+          transform 0.2s;
+      }
+      .nav-cta:hover {
+        background: #b82424;
+        transform: translateY(-1px);
+      }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+      }
+      .hamburger span {
+        width: 26px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        transition: all 0.3s;
+      }
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+      }
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+      }
+
+      @media (max-width: 900px) {
+        .hamburger {
+          display: flex;
+        }
+        .nav-links {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 280px;
+          height: 100vh;
+          background: #07172e;
+          flex-direction: column;
+          padding: 100px 32px 32px;
+          gap: 24px;
+          transition: right 0.3s ease;
+        }
+        .nav-links.open {
+          right: 0;
+        }
+        .nav-links a {
+          font-size: 1.05rem;
+        }
+      }
+
+      /* ========== HERO ========== */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: 72px;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=80")
+          center/cover no-repeat;
+        z-index: 0;
+      }
+      .hero-bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(7, 23, 46, 0.92) 0%,
+          rgba(7, 23, 46, 0.7) 100%
+        );
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 750px;
+        padding: 80px 24px;
+        margin: 0 auto 0 8%;
+      }
+      .hero h1 {
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        color: #fff;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+      .hero h1 em {
+        font-style: normal;
+        color: #c8a96e;
+      }
+      .hero-sub {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.85);
+        margin-bottom: 36px;
+        max-width: 580px;
+      }
+      .hero-btns {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+      }
+      .btn-primary {
+        display: inline-block;
+        background: #d42b2b;
+        color: #fff;
+        padding: 16px 36px;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        transition:
+          background 0.3s,
+          transform 0.2s;
+      }
+      .btn-primary:hover {
+        background: #b82424;
+        transform: translateY(-2px);
+      }
+      .btn-outline {
+        display: inline-block;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        color: #fff;
+        padding: 14px 36px;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        background: transparent;
+        transition: all 0.3s;
+      }
+      .btn-outline:hover {
+        border-color: #c8a96e;
+        color: #c8a96e;
+      }
+      .trust-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 32px;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      .trust-bar span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+      }
+      .trust-bar .dot {
+        width: 6px;
+        height: 6px;
+        background: #c8a96e;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      /* ========== SECTION STYLING ========== */
+      section {
+        padding: 100px 0;
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+        font-weight: 700;
+      }
+      .section-subtitle {
+        text-align: center;
+        max-width: 650px;
+        margin: 0 auto 60px;
+        color: #555;
+        font-size: 1.05rem;
+      }
+
+      /* ========== SERVICE OPTIONS ========== */
+      .services {
+        background: #fff;
+      }
+      .service-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+      @media (max-width: 768px) {
+        .service-cards {
+          grid-template-columns: 1fr;
+        }
+      }
+      .service-card {
+        border-radius: 16px;
+        padding: 48px 36px;
+        position: relative;
+        overflow: hidden;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+      .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 60px rgba(7, 23, 46, 0.12);
+      }
+      .service-card-a {
+        background: linear-gradient(135deg, #07172e 0%, #0d2444 100%);
+        color: #fff;
+      }
+      .service-card-b {
+        background: linear-gradient(135deg, #f5f3ef 0%, #ece8e0 100%);
+        border: 2px solid #e0dbd3;
+      }
+      .service-tag {
+        display: inline-block;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+      .service-card-a .service-tag {
+        background: #c8a96e;
+        color: #07172e;
+      }
+      .service-card-b .service-tag {
+        background: #d42b2b;
+        color: #fff;
+      }
+      .service-card h3 {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+      }
+      .service-card .price {
+        font-size: 2rem;
+        font-weight: 800;
+        font-family: "Playfair Display", serif;
+        margin-bottom: 24px;
+      }
+      .service-card-a .price {
+        color: #c8a96e;
+      }
+      .service-card-b .price {
+        color: #d42b2b;
+      }
+      .service-card .price small {
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+      .service-card ul {
+        margin-bottom: 32px;
+      }
+      .service-card li {
+        padding: 8px 0;
+        padding-left: 28px;
+        position: relative;
+        font-size: 0.95rem;
+      }
+      .service-card li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+      }
+      .service-card-a li::before {
+        color: #c8a96e;
+      }
+      .service-card-b li::before {
+        color: #d42b2b;
+      }
+      .service-card-a li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .service-card-b li {
+        border-bottom: 1px solid rgba(7, 23, 46, 0.08);
+      }
+      .service-card .btn-card {
+        display: inline-block;
+        padding: 14px 32px;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-align: center;
+        width: 100%;
+        border: none;
+      }
+      .service-card-a .btn-card {
+        background: #d42b2b;
+        color: #fff;
+      }
+      .service-card-a .btn-card:hover {
+        background: #b82424;
+      }
+      .service-card-b .btn-card {
+        background: #07172e;
+        color: #fff;
+      }
+      .service-card-b .btn-card:hover {
+        background: #0d2444;
+      }
+
+      /* ========== HOW IT WORKS TIMELINE ========== */
+      .how-it-works {
+        background: #f5f3ef;
+      }
+      .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto 40px;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 32px;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(to bottom, #c8a96e, #d42b2b);
+        border-radius: 2px;
+      }
+      .timeline-step {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 36px;
+        align-items: flex-start;
+        position: relative;
+      }
+      .timeline-num {
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+        background: #07172e;
+        color: #c8a96e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border: 3px solid #c8a96e;
+        z-index: 1;
+      }
+      .timeline-content h3 {
+        font-size: 1.15rem;
+        margin-bottom: 4px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+      }
+      .timeline-content p {
+        color: #555;
+        font-size: 0.92rem;
+      }
+      .timeline-note {
+        text-align: center;
+        background: #fff;
+        padding: 24px 32px;
+        border-radius: 12px;
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 0.95rem;
+        color: #555;
+        border-left: 4px solid #c8a96e;
+      }
+      .timeline-note strong {
+        color: #07172e;
+      }
+
+      /* ========== WHY CHOOSE US ========== */
+      .why-us {
+        background: #07172e;
+        color: #fff;
+      }
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+      }
+      @media (max-width: 900px) {
+        .why-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 500px) {
+        .why-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .why-card {
+        text-align: center;
+        padding: 32px 20px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition:
+          transform 0.3s,
+          background 0.3s;
+      }
+      .why-card:hover {
+        transform: translateY(-4px);
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .why-icon {
+        font-size: 2.4rem;
+        margin-bottom: 16px;
+        display: block;
+      }
+      .why-card h3 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #c8a96e;
+      }
+      .why-card p {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.65);
+      }
+
+      /* ========== ABOUT ========== */
+      .about {
+        background: #fff;
+      }
+      .about-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      @media (max-width: 768px) {
+        .about-inner {
+          grid-template-columns: 1fr;
+        }
+      }
+      .about-img {
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 4/3;
+      }
+      .about-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .about-text h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      .about-text p {
+        color: #555;
+        margin-bottom: 16px;
+        font-size: 0.95rem;
+      }
+      .about-sig {
+        margin-top: 24px;
+        font-family: "Playfair Display", serif;
+        font-size: 1.3rem;
+        color: #07172e;
+        font-weight: 600;
+      }
+
+      /* ========== FINANCING CALLOUT ========== */
+      .financing-callout {
+        background: linear-gradient(135deg, #07172e, #132d52);
+        padding: 80px 0;
+      }
+      .financing-inner {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      @media (max-width: 768px) {
+        .financing-inner {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+      .financing-icon {
+        font-size: 4rem;
+        flex-shrink: 0;
+      }
+      .financing-text h2 {
+        color: #c8a96e;
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+      }
+      .financing-text p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1rem;
+        margin-bottom: 16px;
+      }
+      .financing-text ul li {
+        color: rgba(255, 255, 255, 0.7);
+        padding: 4px 0;
+        padding-left: 20px;
+        position: relative;
+        font-size: 0.92rem;
+      }
+      .financing-text ul li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: #c8a96e;
+      }
+
+      /* ========== TESTIMONIALS ========== */
+      .testimonials {
+        background: #f5f3ef;
+      }
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+      }
+      @media (max-width: 768px) {
+        .testimonial-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .testimonial-card {
+        background: #fff;
+        padding: 36px;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(7, 23, 46, 0.06);
+        transition: transform 0.3s;
+      }
+      .testimonial-card:hover {
+        transform: translateY(-4px);
+      }
+      .testimonial-stars {
+        color: #c8a96e;
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+      }
+      .testimonial-card blockquote {
+        font-size: 0.93rem;
+        color: #444;
+        margin-bottom: 24px;
+        font-style: italic;
+        line-height: 1.7;
+      }
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .testimonial-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #07172e;
+        color: #c8a96e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-family: "Playfair Display", serif;
+      }
+      .testimonial-info strong {
+        display: block;
+        font-size: 0.95rem;
+      }
+      .testimonial-info span {
+        color: #888;
+        font-size: 0.82rem;
+      }
+      .testimonial-car {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #eee;
+        font-size: 0.82rem;
+        color: #888;
+      }
+      .testimonial-car strong {
+        color: #07172e;
+      }
+
+      /* ========== BLOG ========== */
+      .blog {
+        background: #fff;
+      }
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+      }
+      @media (max-width: 768px) {
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .blog-card {
+        border-radius: 16px;
+        overflow: hidden;
+        background: #f5f3ef;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+      .blog-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(7, 23, 46, 0.1);
+      }
+      .blog-img {
+        height: 200px;
+        background: linear-gradient(135deg, #07172e, #1a3a5c);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.2);
+        font-size: 3rem;
+      }
+      .blog-body {
+        padding: 28px;
+      }
+      .blog-body h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+        line-height: 1.4;
+      }
+      .blog-body p {
+        font-size: 0.88rem;
+        color: #666;
+        margin-bottom: 20px;
+      }
+      .blog-body .btn-soon {
+        display: inline-block;
+        padding: 8px 20px;
+        background: #e0dbd3;
+        color: #888;
+        border-radius: 6px;
+        font-size: 0.82rem;
+        font-weight: 600;
+        cursor: default;
+      }
+
+      /* ========== FAQ ========== */
+      .faq {
+        background: #f5f3ef;
+      }
+      .faq-list {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .faq-item {
+        background: #fff;
+        margin-bottom: 12px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(7, 23, 46, 0.04);
+      }
+      .faq-question {
+        width: 100%;
+        padding: 20px 28px;
+        background: none;
+        border: none;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #07172e;
+        text-align: left;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        transition: color 0.3s;
+      }
+      .faq-question:hover {
+        color: #d42b2b;
+      }
+      .faq-question .faq-icon {
+        font-size: 1.4rem;
+        transition: transform 0.3s;
+        flex-shrink: 0;
+        color: #c8a96e;
+      }
+      .faq-item.open .faq-icon {
+        transform: rotate(45deg);
+      }
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.4s ease,
+          padding 0.3s ease;
+      }
+      .faq-item.open .faq-answer {
+        max-height: 500px;
+      }
+      .faq-answer-inner {
+        padding: 0 28px 20px;
+        color: #555;
+        font-size: 0.93rem;
+        line-height: 1.7;
+      }
+
+      /* ========== SIGN-UP FORM ========== */
+      .signup {
+        background: #fff;
+      }
+      .bc-notice {
+        background: #fff3cd;
+        border: 1px solid #ffd666;
+        border-radius: 10px;
+        padding: 16px 24px;
+        margin-bottom: 32px;
+        font-size: 0.9rem;
+        color: #856404;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .bc-notice .icon {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+      .fee-summary-box {
+        background: linear-gradient(135deg, #07172e, #132d52);
+        color: #fff;
+        padding: 32px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+      }
+      .fee-summary-box h3 {
+        color: #c8a96e;
+        margin-bottom: 16px;
+        font-size: 1.3rem;
+      }
+      .fee-summary-box .fee-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      @media (max-width: 600px) {
+        .fee-summary-box .fee-options {
+          grid-template-columns: 1fr;
+        }
+      }
+      .fee-option {
+        background: rgba(255, 255, 255, 0.06);
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .fee-option h4 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+      }
+      .fee-option .fee-price {
+        color: #c8a96e;
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+      .fee-option p {
+        font-size: 0.82rem;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 6px;
+      }
+      .form-container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .form-group {
+        margin-bottom: 24px;
+      }
+      .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        font-size: 0.92rem;
+        color: #07172e;
+      }
+      .form-group label .required {
+        color: #d42b2b;
+      }
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      @media (max-width: 600px) {
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="number"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 14px 16px;
+        border: 2px solid #e0dbd3;
+        border-radius: 8px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.95rem;
+        transition: border-color 0.3s;
+        background: #fff;
+        color: #07172e;
+      }
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #c8a96e;
+      }
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .radio-option {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px 20px;
+        border: 2px solid #e0dbd3;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .radio-option:hover {
+        border-color: #c8a96e;
+      }
+      .radio-option.selected {
+        border-color: #d42b2b;
+        background: rgba(212, 43, 43, 0.03);
+      }
+      .radio-option input[type="radio"] {
+        margin-top: 3px;
+        accent-color: #d42b2b;
+        width: 18px;
+        height: 18px;
+      }
+      .radio-option .radio-label strong {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 2px;
+      }
+      .radio-option .radio-label span {
+        font-size: 0.85rem;
+        color: #777;
+      }
+      .conditional-fields {
+        display: none;
+        padding: 24px;
+        background: #f9f8f5;
+        border-radius: 10px;
+        margin-top: 16px;
+        border: 1px dashed #ddd;
+      }
+      .conditional-fields.active {
+        display: block;
+      }
+      .form-section-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.3rem;
+        margin: 40px 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #e0dbd3;
+        color: #07172e;
+      }
+      .bc-inline-warning {
+        display: none;
+        background: #fff3cd;
+        border: 1px solid #ffd666;
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin-top: 8px;
+        font-size: 0.85rem;
+        color: #856404;
+      }
+      .bc-inline-warning.show {
+        display: block;
+      }
+      .checkbox-group {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+      .checkbox-group input[type="checkbox"] {
+        margin-top: 4px;
+        accent-color: #d42b2b;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+      }
+      .checkbox-group label {
+        font-size: 0.88rem;
+        font-weight: 400;
+        margin-bottom: 0;
+        color: #555;
+      }
+      .checkbox-group label a {
+        color: #d42b2b;
+        text-decoration: underline;
+      }
+
+      /* ========== PAYMENT SECTION ========== */
+      .payment-section {
+        background: #f9f8f5;
+        padding: 32px;
+        border-radius: 12px;
+        margin-top: 32px;
+        border: 2px solid #e0dbd3;
+      }
+      .payment-summary {
+        background: #fff;
+        padding: 24px;
+        border-radius: 10px;
+        margin-bottom: 24px;
+        border: 1px solid #e0dbd3;
+      }
+      .payment-summary h4 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+      }
+      .payment-summary h4 span {
+        color: #d42b2b;
+      }
+      .payment-summary ul {
+        margin-bottom: 12px;
+      }
+      .payment-summary li {
+        padding: 4px 0;
+        padding-left: 20px;
+        position: relative;
+        font-size: 0.9rem;
+        color: #555;
+      }
+      .payment-summary li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #c8a96e;
+        font-weight: 700;
+      }
+      .payment-summary .refund-note {
+        font-size: 0.85rem;
+        color: #888;
+        font-style: italic;
+        padding-top: 8px;
+        border-top: 1px solid #eee;
+      }
+      .mock-stripe {
+        background: #fff;
+        padding: 24px;
+        border-radius: 10px;
+        border: 1px solid #e0dbd3;
+        margin-bottom: 20px;
+      }
+      .mock-stripe h4 {
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+        color: #07172e;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .stripe-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 16px;
+      }
+      .btn-pay {
+        width: 100%;
+        padding: 18px;
+        background: #d42b2b;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition:
+          background 0.3s,
+          transform 0.2s;
+        margin-top: 16px;
+      }
+      .btn-pay:hover {
+        background: #b82424;
+        transform: translateY(-1px);
+      }
+      .secure-note {
+        text-align: center;
+        font-size: 0.82rem;
+        color: #888;
+        margin-top: 12px;
+      }
+
+      /* ========== DELAYED CALL BANNER ========== */
+      .call-banner {
+        display: none;
+        background: linear-gradient(135deg, #07172e, #132d52);
+        padding: 20px 28px;
+        border-radius: 10px;
+        margin-top: 20px;
+        text-align: center;
+        animation: slideUp 0.5s ease;
+      }
+      .call-banner.visible {
+        display: block;
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .call-banner p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+      }
+      .call-banner .btn-calendly {
+        display: inline-block;
+        padding: 10px 24px;
+        background: #c8a96e;
+        color: #07172e;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: none;
+        transition: background 0.3s;
+      }
+      .call-banner .btn-calendly:hover {
+        background: #b89a5e;
+      }
+
+      /* ========== BOOK A CALL MODAL ========== */
+      .call-modal-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(7, 23, 46, 0.8);
+        z-index: 2000;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+      .call-modal-overlay.visible {
+        display: flex;
+      }
+      .call-modal {
+        background: #fff;
+        border-radius: 16px;
+        padding: 40px 36px;
+        max-width: 480px;
+        width: 100%;
+        position: relative;
+        animation: slideUp 0.3s ease;
+      }
+      .call-modal h3 {
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+        color: #07172e;
+      }
+      .call-modal .modal-sub {
+        font-size: 0.88rem;
+        color: #777;
+        margin-bottom: 24px;
+      }
+      .call-modal .close-modal {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #999;
+      }
+      .call-modal .close-modal:hover {
+        color: #07172e;
+      }
+      .call-modal .form-group {
+        margin-bottom: 16px;
+      }
+      .call-modal label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+        font-size: 0.88rem;
+        color: #07172e;
+      }
+      .call-modal input,
+      .call-modal select,
+      .call-modal textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border: 2px solid #e0dbd3;
+        border-radius: 8px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.9rem;
+        color: #07172e;
+        background: #fff;
+      }
+      .call-modal input:focus,
+      .call-modal select:focus,
+      .call-modal textarea:focus {
+        outline: none;
+        border-color: #c8a96e;
+      }
+      .call-modal textarea {
+        resize: vertical;
+        min-height: 60px;
+      }
+      .call-modal .btn-send-call {
+        width: 100%;
+        padding: 14px;
+        background: #d42b2b;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 8px;
+      }
+      .call-modal .btn-send-call:hover {
+        background: #b82424;
+      }
+      .call-modal .success-msg {
+        display: none;
+        text-align: center;
+        padding: 20px 0;
+      }
+      .call-modal .success-msg .check {
+        font-size: 3rem;
+        margin-bottom: 12px;
+      }
+      .call-modal .success-msg p {
+        color: #555;
+        font-size: 0.95rem;
+      }
+
+      /* ========== THANK YOU PAGE ========== */
+      .thank-you {
+        display: none;
+        min-height: 100vh;
+        padding: 120px 24px 80px;
+        text-align: center;
+      }
+      .thank-you.active {
+        display: block;
+      }
+      .thank-you-card {
+        max-width: 700px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 60px 48px;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(7, 23, 46, 0.08);
+      }
+      .thank-you-icon {
+        font-size: 4rem;
+        margin-bottom: 24px;
+      }
+      .thank-you h1 {
+        font-size: 2rem;
+        margin-bottom: 12px;
+        color: #07172e;
+      }
+      .thank-you .subtext {
+        color: #555;
+        font-size: 1.05rem;
+        margin-bottom: 36px;
+      }
+      .thank-you-steps {
+        text-align: left;
+        margin-bottom: 32px;
+      }
+      .thank-you-steps ol {
+        list-style: none;
+        counter-reset: steps;
+      }
+      .thank-you-steps li {
+        counter-increment: steps;
+        padding: 12px 0 12px 48px;
+        position: relative;
+        border-bottom: 1px solid #eee;
+        font-size: 0.93rem;
+        color: #444;
+      }
+      .thank-you-steps li::before {
+        content: counter(steps);
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 32px;
+        height: 32px;
+        background: #07172e;
+        color: #c8a96e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.85rem;
+      }
+      .thank-you .email-note {
+        background: #f9f8f5;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 24px;
+        font-size: 0.9rem;
+        color: #555;
+      }
+      .thank-you .refund-reminder {
+        font-size: 0.85rem;
+        color: #888;
+        font-style: italic;
+        margin-bottom: 28px;
+      }
+      .social-share {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+      .social-share a {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        transition: opacity 0.3s;
+      }
+      .social-share a:hover {
+        opacity: 0.85;
+      }
+      .social-share .fb {
+        background: #1877f2;
+        color: #fff;
+      }
+      .social-share .ig {
+        background: linear-gradient(
+          45deg,
+          #f09433,
+          #e6683c,
+          #dc2743,
+          #cc2366,
+          #bc1888
+        );
+        color: #fff;
+      }
+      .btn-home {
+        display: inline-block;
+        padding: 14px 36px;
+        background: #07172e;
+        color: #fff;
+        border-radius: 6px;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+        font-size: 1rem;
+        font-family: "DM Sans", sans-serif;
+        transition: background 0.3s;
+      }
+      .btn-home:hover {
+        background: #0d2444;
+      }
+
+      /* ========== LIVE CHAT WIDGET ========== */
+      /* PLACEHOLDER: Replace with Tidio or Intercom embed script when ready to activate */
+      .chat-widget {
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        z-index: 999;
+      }
+      .chat-bubble {
+        width: 60px;
+        height: 60px;
+        background: #d42b2b;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(212, 43, 43, 0.3);
+        transition: transform 0.3s;
+      }
+      .chat-bubble:hover {
+        transform: scale(1.05);
+      }
+      .chat-bubble svg {
+        width: 28px;
+        height: 28px;
+        fill: #fff;
+      }
+      .chat-popup {
+        display: none;
+        position: absolute;
+        bottom: 72px;
+        right: 0;
+        width: 280px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        text-align: center;
+      }
+      .chat-popup.visible {
+        display: block;
+      }
+      .chat-popup p {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 8px;
+      }
+      /* REPLACE: Insert real phone number below */
+      .chat-popup strong {
+        color: #07172e;
+      }
+      .chat-popup .close-chat {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #999;
+      }
+
+      /* ========== FOOTER ========== */
+      .footer {
+        background: #07172e;
+        color: rgba(255, 255, 255, 0.7);
+        padding: 60px 0 0;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+      @media (max-width: 768px) {
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 480px) {
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .footer-brand .footer-logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 8px;
+      }
+      .footer-brand .footer-logo span {
+        color: #d42b2b;
+      }
+      .footer-brand .tagline {
+        font-size: 0.88rem;
+        color: #c8a96e;
+        font-style: italic;
+        margin-bottom: 16px;
+      }
+      .footer h4 {
+        color: #fff;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .footer ul li {
+        margin-bottom: 8px;
+      }
+      .footer ul a {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.88rem;
+        transition: color 0.3s;
+      }
+      .footer ul a:hover {
+        color: #c8a96e;
+      }
+      .footer-social {
+        display: flex;
+        gap: 12px;
+        margin-top: 16px;
+      }
+      .footer-social a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s;
+      }
+      .footer-social a:hover {
+        background: #d42b2b;
+      }
+      .footer-social svg {
+        width: 18px;
+        height: 18px;
+        fill: #fff;
+      }
+      .footer-bc-notice {
+        background: rgba(255, 211, 102, 0.1);
+        border: 1px solid rgba(255, 211, 102, 0.2);
+        padding: 14px 20px;
+        border-radius: 8px;
+        margin-bottom: 32px;
+        font-size: 0.82rem;
+        color: #ffd666;
+      }
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.82rem;
+      }
+
+      /* ========== LEGAL PAGES ========== */
+      .legal-page {
+        display: none;
+        padding: 120px 24px 80px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .legal-page.active {
+        display: block;
+      }
+      .legal-page h1 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+      }
+      .legal-page h2 {
+        font-size: 1.3rem;
+        margin: 28px 0 12px;
+      }
+      .legal-page p {
+        color: #555;
+        margin-bottom: 12px;
+        font-size: 0.93rem;
+        line-height: 1.7;
+      }
+      .legal-page ul {
+        margin-left: 20px;
+        margin-bottom: 12px;
+        list-style: disc;
+      }
+      .legal-page li {
+        color: #555;
+        font-size: 0.93rem;
+        margin-bottom: 4px;
+      }
+      .legal-back {
+        display: inline-block;
+        margin-top: 24px;
+        padding: 10px 24px;
+        background: #07172e;
+        color: #fff;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+
+      /* ========== UTILS ========== */
+      .main-content {
+      }
+      .hidden {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ========== MAIN SITE ========== -->
+    <div class="main-content" id="mainContent">
+      <!-- NAVIGATION -->
+      <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+          <a href="#hero" class="nav-logo">Car<span>Broker</span>Canada</a>
+          <div class="nav-links" id="navLinks">
+            <a href="#how-it-works" onclick="closeNav()">How It Works</a>
+            <a href="#services" onclick="closeNav()">Our Services</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#testimonials" onclick="closeNav()">Testimonials</a>
+            <a href="#faq" onclick="closeNav()">FAQ</a>
+            <!-- PLACEHOLDER: Replace href with real Calendly link -->
+            <a
+              href="#"
+              class="nav-book-call"
+              onclick="
+                event.preventDefault();
+                openCalendly();
+                closeNav();
+              "
+              >Book a Call</a
+            >
+            <a href="#signup" class="nav-cta" onclick="closeNav()"
+              >Get Started</a
+            >
+          </div>
+          <div class="hamburger" id="hamburger" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div
+          class="hero-bg"
+          role="img"
+          aria-label="Luxury car on a scenic Canadian highway"
+        ></div>
+        <div class="hero-content">
+          <h1>
+            We Find, Negotiate &amp; Secure Your <em>Perfect Canadian Car.</em>
+          </h1>
+          <p class="hero-sub">
+            Flat-fee service. All provinces except BC. Zero dealership stress.
+          </p>
+          <div class="hero-btns">
+            <a href="#signup" class="btn-primary">Get Started</a>
+            <a href="#how-it-works" class="btn-outline">See How It Works</a>
+          </div>
+          <div class="trust-bar">
+            <span><span class="dot"></span> 500+ Canadians Helped</span>
+            <span
+              ><span class="dot"></span> All Provinces &amp; Territories</span
+            >
+            <span><span class="dot"></span> 15 Years Experience</span>
+            <span><span class="dot"></span> 4.9&#9733; Rating</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE OPTIONS -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-title fade-in">Two Ways We Can Help</h2>
+          <p class="section-subtitle fade-in">
+            Whether you know exactly what you want or need expert guidance —
+            we've got you covered.
+          </p>
+          <div class="service-cards">
+            <div class="service-card service-card-a fade-in">
+              <span class="service-tag">Most Popular</span>
+              <h3>"I Know What I Want"</h3>
+              <div class="price">$500 <small>flat fee</small></div>
+              <ul>
+                <li>You tell us the exact make, model, trim &amp; color</li>
+                <li>We contact dealers across Canada on your behalf</li>
+                <li>We negotiate the best price and terms</li>
+                <li>We send you a full Deal Summary for approval</li>
+                <li>We coordinate all paperwork with the dealer</li>
+                <li>You sign everything via DocuSign from home</li>
+                <li>You pick up your vehicle at the dealership</li>
+                <li>Financing referrals included if needed</li>
+              </ul>
+              <a href="#signup" class="btn-card">Get Started — Option A</a>
+            </div>
+            <div class="service-card service-card-b fade-in">
+              <span class="service-tag">Full Guidance</span>
+              <h3>"Help Me Find the Right Car"</h3>
+              <div class="price">
+                $500 <small>now</small> + $500 <small>on delivery</small>
+              </div>
+              <ul>
+                <li>We help you choose the right vehicle for your needs</li>
+                <li>Personalized recommendations &amp; comparisons</li>
+                <li>Test drive coordination if needed</li>
+                <li>Everything included in Option A</li>
+                <li>Full dealer outreach &amp; price negotiation</li>
+                <li>Deal Summary for your approval</li>
+                <li>DocuSign from home — just show up to pick up</li>
+                <li>Second $500 charged only when vehicle is ready</li>
+              </ul>
+              <a href="#signup" class="btn-card">Get Started — Option B</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="how-it-works" id="how-it-works">
+        <div class="container">
+          <h2 class="section-title fade-in">How It Works</h2>
+          <p class="section-subtitle fade-in">
+            Pay a simple flat fee to get started. Here's the step-by-step
+            process for Option A:
+          </p>
+          <div class="timeline">
+            <div class="timeline-step fade-in">
+              <div class="timeline-num">1</div>
+              <div class="timeline-content">
+                <h3>Submit Your Request &amp; Pay $500</h3>
+                <p>
+                  Fill out our simple form with your vehicle details and pay the
+                  flat fee to get started.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step fade-in">
+              <div class="timeline-num">2</div>
+              <div class="timeline-content">
+                <h3>Broker Contacts You Within 24 Hours</h3>
+                <p>
+                  Your dedicated broker reaches out to confirm every vehicle
+                  detail — make, model, trim, color, and preferences.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step fade-in">
+              <div class="timeline-num">3</div>
+              <div class="timeline-content">
+                <h3>We Contact Dealers Across Canada</h3>
+                <p>
+                  We reach out to our network of dealerships nationwide to find
+                  your exact vehicle at the best possible price.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step fade-in">
+              <div class="timeline-num">4</div>
+              <div class="timeline-content">
+                <h3>We Negotiate the Best Price &amp; Terms</h3>
+                <p>
+                  Using 15 years of industry experience, we negotiate
+                  aggressively on your behalf — saving you thousands.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step fade-in">
+              <div class="timeline-num">5</div>
+              <div class="timeline-content">
+                <h3>Deal Summary Sent for Your Approval</h3>
+                <p>
+                  We send you a clear breakdown — price, dealer info, fees, and
+                  everything you need to make an informed decision.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step fade-in">
+              <div class="timeline-num">6</div>
+              <div class="timeline-content">
+                <h3>You Approve the Deal</h3>
+                <p>
+                  Review the summary and give us the green light. No pressure —
+                  it's your call.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step fade-in">
+              <div class="timeline-num">7</div>
+              <div class="timeline-content">
+                <h3>Sign Documents via DocuSign from Home</h3>
+                <p>
+                  All purchase paperwork is coordinated with the dealer. You
+                  sign electronically from the comfort of your home.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step fade-in">
+              <div class="timeline-num">8</div>
+              <div class="timeline-content">
+                <h3>Pick Up Your Vehicle at the Dealership</h3>
+                <p>
+                  Head to the dealership to collect your new car. Most Canadian
+                  banks and lenders require in-person pickup — this is standard
+                  practice.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-note fade-in">
+            <strong>Option B</strong> follows the same process with a
+            <strong>full vehicle consultation phase</strong> added at the start
+            to help you find the perfect car. Your broker provides personalized
+            recommendations, comparisons, and test drive coordination before
+            moving into the negotiation steps above.
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section class="why-us" id="why-us">
+        <div class="container">
+          <h2 class="section-title fade-in" style="color: #fff">
+            Why Canadians Choose Us
+          </h2>
+          <p
+            class="section-subtitle fade-in"
+            style="color: rgba(255, 255, 255, 0.6)"
+          >
+            Real results. Real savings. Real people behind every deal.
+          </p>
+          <div class="why-grid">
+            <div class="why-card fade-in">
+              <span class="why-icon">&#128101;</span>
+              <h3>500+ Canadians Helped</h3>
+              <p>
+                A growing community of satisfied clients from coast to coast.
+              </p>
+            </div>
+            <div class="why-card fade-in">
+              <span class="why-icon">&#128176;</span>
+              <h3>Save an Average of $4,200</h3>
+              <p>
+                Our negotiation expertise puts real money back in your pocket.
+              </p>
+            </div>
+            <div class="why-card fade-in">
+              <span class="why-icon">&#128188;</span>
+              <h3>15 Years of Experience</h3>
+              <p>
+                Over a decade of dealer relationships and industry knowledge.
+              </p>
+            </div>
+            <div class="why-card fade-in">
+              <span class="why-icon">&#127464;&#127462;</span>
+              <h3>All Provinces &amp; Territories (excl. BC)</h3>
+              <p>We serve Canadians everywhere — from Halifax to Whitehorse.</p>
+            </div>
+            <div class="why-card fade-in">
+              <span class="why-icon">&#128274;</span>
+              <h3>No Hidden Fees — Ever</h3>
+              <p>Transparent flat-fee pricing. What you see is what you pay.</p>
+            </div>
+            <div class="why-card fade-in">
+              <span class="why-icon">&#129309;</span>
+              <h3>Dedicated Agent for Every Client</h3>
+              <p>One broker, one relationship — from start to finish.</p>
+            </div>
+            <div class="why-card fade-in">
+              <span class="why-icon">&#127974;</span>
+              <h3>Financing Referrals Available</h3>
+              <p>
+                We connect you with trusted Canadian lenders to simplify your
+                purchase.
+              </p>
+            </div>
+            <div class="why-card fade-in">
+              <span class="why-icon">&#9997;&#65039;</span>
+              <h3>DocuSign from Home</h3>
+              <p>
+                Sign everything electronically — just show up to pick up your
+                car.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-inner">
+            <div class="about-img fade-in">
+              <img
+                src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80"
+                alt="Professional office setting representing CarBrokerCanada headquarters"
+              />
+            </div>
+            <div class="about-text fade-in">
+              <h2>A Message From Your Broker</h2>
+              <p>
+                After 15 years in the Canadian automotive industry, I've seen
+                every trick in the book. I've watched hardworking families walk
+                into dealerships and leave paying thousands more than they
+                should. I started CarBrokerCanada because I believed there had
+                to be a better way.
+              </p>
+              <p>
+                My mission is simple: take the stress, the games, and the
+                uncertainty out of buying a car in Canada. When you work with
+                me, you get someone in your corner who knows exactly how to
+                navigate the process — from finding the right vehicle to
+                negotiating a fair price to handling all the paperwork.
+              </p>
+              <p>
+                I take pride in serving clients coast to coast, from downtown
+                Toronto to rural Saskatchewan. Whether you're buying your first
+                car or your tenth, I treat every deal like it's my own money on
+                the line. Full transparency. No surprises. That's my promise to
+                you.
+              </p>
+              <div class="about-sig">— The CarBrokerCanada Team</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINANCING CALLOUT -->
+      <section class="financing-callout" id="financing">
+        <div class="container">
+          <div class="financing-inner fade-in">
+            <span class="financing-icon">&#127974;</span>
+            <div class="financing-text">
+              <h2>Need Financing? We'll Connect You.</h2>
+              <p>
+                CarBrokerCanada partners with trusted Canadian lenders to help
+                you secure competitive financing. We're not a lender — we're
+                your connector. We save you the time and stress of shopping
+                around for rates on your own.
+              </p>
+              <ul>
+                <li>Access to vetted Canadian lending partners</li>
+                <li>Competitive rates for new and used vehicles</li>
+                <li>No obligation — just a helpful referral</li>
+                <li>Included as part of our service at no extra charge</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h2 class="section-title fade-in">What Our Clients Say</h2>
+          <p class="section-subtitle fade-in">
+            Real stories from real Canadians who trusted us with their car
+            purchase.
+          </p>
+          <div class="testimonial-grid">
+            <div class="testimonial-card fade-in">
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <blockquote>
+                "I knew I wanted a 2024 RAV4 XLE in Lunar Rock. I just didn't
+                want to deal with three different dealerships trying to upsell
+                me. CarBrokerCanada found my exact car, negotiated $3,800 off
+                the sticker price, and I signed everything on my couch through
+                DocuSign. When I picked it up, it was exactly what I asked for.
+                Easiest car purchase of my life."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">MR</div>
+                <div class="testimonial-info">
+                  <strong>Michelle Rousseau</strong>
+                  <span>Ottawa, Ontario</span>
+                </div>
+              </div>
+              <div class="testimonial-car">
+                <strong>Option A</strong> · 2024 Toyota RAV4 XLE · Saved $3,800
+              </div>
+            </div>
+            <div class="testimonial-card fade-in">
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <blockquote>
+                "We had a budget of around $45K and knew we needed a family SUV,
+                but that's about it. Our broker walked us through five different
+                options, compared features we actually cared about, and even set
+                up two test drives. We ended up with a Hyundai Palisade that we
+                never would've considered on our own — and we love it. Worth
+                every penny of the fee."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">JT</div>
+                <div class="testimonial-info">
+                  <strong>James Thiessen</strong>
+                  <span>Calgary, Alberta</span>
+                </div>
+              </div>
+              <div class="testimonial-car">
+                <strong>Option B</strong> · 2024 Hyundai Palisade Ultimate ·
+                Saved $5,100
+              </div>
+            </div>
+            <div class="testimonial-card fade-in">
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;<span style="color: #ddd"
+                  >&#9733;</span
+                >
+              </div>
+              <blockquote>
+                "Not only did they find me a great deal on a certified pre-owned
+                F-150, but when I mentioned I hadn't lined up financing yet,
+                they connected me with a lender who got me a rate a full percent
+                lower than what my bank offered. I didn't even know that was
+                part of the service. It saved me over $2,000 in interest over
+                the life of the loan. Incredible."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">PL</div>
+                <div class="testimonial-info">
+                  <strong>Patrick Leblanc</strong>
+                  <span>Moncton, New Brunswick</span>
+                </div>
+              </div>
+              <div class="testimonial-car">
+                <strong>Option A + Financing Referral</strong> · 2023 Ford F-150
+                XLT (CPO) · Saved $4,200 + $2,000 in interest
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG / RESOURCES -->
+      <!-- PLACEHOLDER: Replace with real blog posts when content is ready -->
+      <section class="blog" id="blog">
+        <div class="container">
+          <h2 class="section-title fade-in">Resources &amp; Insights</h2>
+          <p class="section-subtitle fade-in">
+            Expert advice to help you make smarter car-buying decisions in
+            Canada.
+          </p>
+          <div class="blog-grid">
+            <div class="blog-card fade-in">
+              <div class="blog-img" aria-label="Blog post placeholder image">
+                &#128240;
+              </div>
+              <div class="blog-body">
+                <h3>
+                  How to Avoid Getting Ripped Off at a Canadian Dealership
+                </h3>
+                <p>
+                  The most common tactics dealers use — and exactly how to
+                  protect yourself before you step on the lot.
+                </p>
+                <span class="btn-soon">Coming Soon</span>
+              </div>
+            </div>
+            <div class="blog-card fade-in">
+              <div class="blog-img" aria-label="Blog post placeholder image">
+                &#128200;
+              </div>
+              <div class="blog-body">
+                <h3>
+                  New vs. Used in 2025 — What Actually Makes Sense in Canada
+                </h3>
+                <p>
+                  With prices shifting fast, we break down when buying new makes
+                  sense and when used is the smarter play.
+                </p>
+                <span class="btn-soon">Coming Soon</span>
+              </div>
+            </div>
+            <div class="blog-card fade-in">
+              <div class="blog-img" aria-label="Blog post placeholder image">
+                &#128176;
+              </div>
+              <div class="blog-body">
+                <h3>How a Car Broker Saved This Calgary Family $6,200</h3>
+                <p>
+                  A real client story about how one phone call to
+                  CarBrokerCanada changed the way this family buys cars forever.
+                </p>
+                <span class="btn-soon">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+          <p class="section-subtitle fade-in">
+            Everything you need to know before getting started.
+          </p>
+          <div class="faq-list">
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                What is a car broker and how does this work?<span
+                  class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  A car broker is a licensed professional who works on your
+                  behalf to find, negotiate, and secure the purchase of a
+                  vehicle. Instead of spending your weekends visiting
+                  dealerships and haggling over prices, you hire us to do the
+                  heavy lifting. We leverage our industry relationships and
+                  negotiation experience to get you a better deal than you'd
+                  likely get on your own — all for a simple flat fee.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                What is the difference between Option A and Option B?<span
+                  class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <strong>Option A ($500 flat fee)</strong> is for clients who
+                  already know the exact make, model, trim, and color they want.
+                  We handle the dealer outreach, negotiation, paperwork, and
+                  coordination.
+                  <strong>Option B ($500 upfront + $500 on delivery)</strong> is
+                  for clients who need help figuring out which vehicle is right
+                  for them. We provide personalized recommendations,
+                  comparisons, and test drive coordination — then handle
+                  everything in Option A once you've decided. The second $500 is
+                  only charged when your vehicle is ready for pickup.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                Why do I pay a fee upfront?<span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  The upfront fee ensures we can dedicate real time and
+                  resources to your search from day one. Broker work involves
+                  hours of dealer outreach, price research, and negotiation —
+                  all before a deal is even signed. The $500 fee keeps our
+                  service accessible while ensuring you get a dedicated broker
+                  who's fully invested in your purchase.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                Is the fee refundable?<span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  The $500 fee is non-refundable in all circumstances except
+                  one: if CarBrokerCanada is unable to source or secure the
+                  requested vehicle, the full amount paid will be refunded. This
+                  protects you in the rare case that your specific vehicle
+                  cannot be found or the deal cannot be completed through no
+                  fault of your own.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                What if you can't find my car?<span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  If we are unable to source or secure the vehicle you've
+                  requested, you will receive a full refund of all fees paid.
+                  This is our guarantee — you only pay if we deliver results.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                How long does the process take?<span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Most Option A deals are completed within 1–3 weeks, depending
+                  on vehicle availability and dealer responsiveness. Option B
+                  may take a bit longer due to the consultation and
+                  recommendation phase. We'll keep you updated throughout the
+                  process and always work as quickly as possible without cutting
+                  corners.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                Do I have to go to the dealership at all?<span class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Yes — but only once, and only to pick up your vehicle. All
+                  purchase documents are signed via DocuSign from the comfort of
+                  your home. The in-person pickup is required because most major
+                  Canadian banks and lenders mandate it for vehicle financing
+                  and registration purposes. This is standard practice across
+                  the industry, and we'll coordinate everything so it's as
+                  smooth as possible.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                Can you help with financing?<span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Yes! While CarBrokerCanada does not provide financing
+                  directly, we connect you with trusted Canadian lending
+                  partners who offer competitive rates for new and used
+                  vehicles. This referral is included as part of our service at
+                  no extra charge. Many of our clients have secured better rates
+                  through our partners than they were offered by their own
+                  banks.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                Do you work with all car brands?<span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Yes — we work with all major brands and dealerships across
+                  Canada. Whether you're looking for a Toyota, BMW, Ford, Tesla,
+                  Hyundai, or anything else, we have the relationships and
+                  expertise to source it for you at the best possible price.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                What if I have a trade-in?<span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  If you have a vehicle to trade in, just let us know in the
+                  form. We'll factor the trade-in into the overall deal
+                  negotiation to ensure you get a fair value. We can also advise
+                  on whether trading in or selling privately would put more
+                  money in your pocket.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                Which provinces and territories do you serve?<span
+                  class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  We serve clients in all Canadian provinces and territories
+                  with the exception of British Columbia. This includes Alberta,
+                  Saskatchewan, Manitoba, Ontario, Quebec, New Brunswick, Nova
+                  Scotia, Prince Edward Island, Newfoundland and Labrador,
+                  Yukon, Northwest Territories, and Nunavut.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                How does DocuSign work for the paperwork?<span class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Once your deal is finalized, we coordinate with the dealership
+                  to prepare all purchase documents electronically. You'll
+                  receive a DocuSign email with everything ready for your review
+                  and signature. You can sign from your phone, tablet, or
+                  computer — no printing, scanning, or faxing required. It's
+                  legally binding and widely used across the Canadian automotive
+                  industry.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                Why can't you serve British Columbia?<span class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  We are currently unable to accept clients from British
+                  Columbia. We apologize for the inconvenience and hope to serve
+                  BC residents in the future. We appreciate your understanding
+                  and encourage you to check back as our service area may
+                  expand.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIGN-UP FORM -->
+      <section class="signup" id="signup">
+        <div class="container">
+          <h2 class="section-title fade-in">Let's Find Your Car</h2>
+          <p class="section-subtitle fade-in">
+            Fill out the form below and your dedicated broker will be in touch
+            within 24 hours.
+          </p>
+
+          <div class="form-container">
+            <!-- BC NOTICE -->
+            <div class="bc-notice fade-in">
+              <span class="icon">&#9888;&#65039;</span>
+              <div>
+                <strong>Please note:</strong> CarBrokerCanada is currently
+                unable to accept clients from British Columbia. We apologize for
+                the inconvenience and hope to serve BC residents in the future.
+              </div>
+            </div>
+
+            <!-- FEE SUMMARY -->
+            <div class="fee-summary-box fade-in">
+              <h3>Service Fees — Simple &amp; Transparent</h3>
+              <div class="fee-options">
+                <div class="fee-option">
+                  <h4>Option A — "I Know What I Want"</h4>
+                  <div class="fee-price">$500 flat</div>
+                  <p>One payment. We handle the rest.</p>
+                </div>
+                <div class="fee-option">
+                  <h4>Option B — "Help Me Find the Right Car"</h4>
+                  <div class="fee-price">$500 + $500</div>
+                  <p>$500 now. $500 when your vehicle is ready for pickup.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FORM -->
+            <form id="brokerForm" onsubmit="return handleSubmit(event);">
+              <!-- SERVICE SELECTION -->
+              <h3 class="form-section-title">Choose Your Service</h3>
+              <div class="form-group">
+                <div class="radio-group">
+                  <label class="radio-option" id="radioA">
+                    <input
+                      type="radio"
+                      name="service"
+                      value="option-a"
+                      required
+                      onchange="handleServiceChange()"
+                    />
+                    <div class="radio-label">
+                      <strong
+                        >Option A — I know exactly what I want ($500
+                        flat)</strong
+                      >
+                      <span
+                        >I have a specific make, model, trim, and color in mind.
+                        Just find it and negotiate the best deal.</span
+                      >
+                    </div>
+                  </label>
+                  <label class="radio-option" id="radioB">
+                    <input
+                      type="radio"
+                      name="service"
+                      value="option-b"
+                      onchange="handleServiceChange()"
+                    />
+                    <div class="radio-label">
+                      <strong
+                        >Option B — Help me find the right car ($500 now + $500
+                        on delivery)</strong
+                      >
+                      <span
+                        >I know my budget and needs but want expert guidance
+                        choosing the right vehicle.</span
+                      >
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- OPTION A FIELDS -->
+              <div class="conditional-fields" id="optionAFields">
+                <h4 style="margin-bottom: 16px; font-size: 1rem">
+                  Tell Us What You Want
+                </h4>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Car Brand <span class="required">*</span></label>
+                    <input
+                      type="text"
+                      name="car_brand"
+                      placeholder="e.g., Toyota, BMW, Ford"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Model <span class="required">*</span></label>
+                    <input
+                      type="text"
+                      name="car_model"
+                      placeholder="e.g., RAV4, 3 Series, F-150"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Trim Level <span class="required">*</span></label>
+                    <input
+                      type="text"
+                      name="car_trim"
+                      placeholder="e.g., XLE, M Sport, Lariat"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label
+                      >Preferred Color <span class="required">*</span></label
+                    >
+                    <input
+                      type="text"
+                      name="car_color"
+                      placeholder="e.g., Lunar Rock, Black Sapphire"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- OPTION B FIELDS -->
+              <div class="conditional-fields" id="optionBFields">
+                <h4 style="margin-bottom: 16px; font-size: 1rem">
+                  Tell Us What You Need
+                </h4>
+                <div class="form-group">
+                  <label>Type of Vehicle <span class="required">*</span></label>
+                  <select name="vehicle_type">
+                    <option value="">Select type...</option>
+                    <option value="suv">SUV</option>
+                    <option value="truck">Truck</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="minivan">Minivan</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label
+                    >Must-Have Features <span class="required">*</span></label
+                  >
+                  <textarea
+                    name="must_have_features"
+                    placeholder="e.g., AWD, leather seats, sunroof, towing package, Apple CarPlay..."
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Brands You're Open To</label>
+                  <input
+                    type="text"
+                    name="open_brands"
+                    placeholder="e.g., Toyota, Hyundai, Kia, Honda — or 'open to anything'"
+                  />
+                </div>
+              </div>
+
+              <!-- PERSONAL INFO -->
+              <h3 class="form-section-title">Personal Information</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Full Name <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    name="full_name"
+                    required
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>City <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    name="city"
+                    required
+                    placeholder="Your city"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label
+                    >Province / Territory <span class="required">*</span></label
+                  >
+                  <select
+                    name="province"
+                    id="provinceSelect"
+                    required
+                    onchange="handleProvinceChange()"
+                  >
+                    <option value="">Select province...</option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC" disabled style="color: #999">
+                      British Columbia (Currently Unavailable)
+                    </option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="YT">Yukon</option>
+                  </select>
+                  <div class="bc-inline-warning" id="bcWarning">
+                    &#9888;&#65039; CarBrokerCanada is currently unable to
+                    accept clients from British Columbia. We apologize for the
+                    inconvenience and hope to serve BC residents in the future.
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Phone Number <span class="required">*</span></label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    required
+                    placeholder="(555) 123-4567"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email Address <span class="required">*</span></label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+
+              <!-- VEHICLE & PURCHASE DETAILS -->
+              <h3 class="form-section-title">Vehicle &amp; Purchase Details</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Budget Range <span class="required">*</span></label>
+                  <select name="budget" required>
+                    <option value="">Select budget...</option>
+                    <option value="under-20k">Under $20K</option>
+                    <option value="20k-30k">$20K – $30K</option>
+                    <option value="30k-50k">$30K – $50K</option>
+                    <option value="50k-75k">$50K – $75K</option>
+                    <option value="75k-100k">$75K – $100K</option>
+                    <option value="100k-plus">$100K+</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>New or Used? <span class="required">*</span></label>
+                  <select name="new_used" required>
+                    <option value="">Select...</option>
+                    <option value="new">New</option>
+                    <option value="used">Used</option>
+                    <option value="either">Open to Either</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label
+                    >Financing Needed? <span class="required">*</span></label
+                  >
+                  <select name="financing" required>
+                    <option value="">Select...</option>
+                    <option value="yes">
+                      Yes — please connect me with a lender
+                    </option>
+                    <option value="no">No — I have my own financing</option>
+                    <option value="pre-approved">Already Pre-Approved</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Trade-In? <span class="required">*</span></label>
+                  <select
+                    name="trade_in"
+                    id="tradeInSelect"
+                    required
+                    onchange="handleTradeInChange()"
+                  >
+                    <option value="">Select...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- TRADE-IN DETAILS -->
+              <div class="conditional-fields" id="tradeInFields">
+                <h4 style="margin-bottom: 16px; font-size: 1rem">
+                  Trade-In Vehicle Details
+                </h4>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Year</label>
+                    <input
+                      type="text"
+                      name="trade_year"
+                      placeholder="e.g., 2019"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Make</label>
+                    <input
+                      type="text"
+                      name="trade_make"
+                      placeholder="e.g., Honda"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Model</label>
+                    <input
+                      type="text"
+                      name="trade_model"
+                      placeholder="e.g., Civic"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Approximate KMs</label>
+                    <input
+                      type="text"
+                      name="trade_kms"
+                      placeholder="e.g., 85,000"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Do you still owe money on this vehicle?</label>
+                    <select
+                      name="trade_owe"
+                      id="tradeOweSelect"
+                      onchange="handleTradeOweChange()"
+                    >
+                      <option value="">Select...</option>
+                      <option value="no">No — it's fully paid off</option>
+                      <option value="yes">Yes — I still owe money</option>
+                      <option value="not-sure">Not sure</option>
+                    </select>
+                  </div>
+                  <div
+                    class="form-group"
+                    id="tradeOweAmountGroup"
+                    style="display: none"
+                  >
+                    <label>Approximate Amount Owing</label>
+                    <input
+                      type="text"
+                      name="trade_owe_amount"
+                      placeholder="e.g., $12,000"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Timeline <span class="required">*</span></label>
+                  <select name="timeline" required>
+                    <option value="">Select...</option>
+                    <option value="asap">As Soon as Possible</option>
+                    <option value="1-3-months">1–3 Months</option>
+                    <option value="3-6-months">3–6 Months</option>
+                    <option value="exploring">Just Exploring</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>How did you hear about us?</label>
+                  <select name="referral_source">
+                    <option value="">Select...</option>
+                    <option value="google">Google</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="friend-family">Friend or Family</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Additional Notes</label>
+                <textarea
+                  name="notes"
+                  placeholder="Anything else we should know? Special requests, dealer preferences, questions..."
+                ></textarea>
+              </div>
+
+              <!-- CONSENT CHECKBOXES -->
+              <div class="checkbox-group">
+                <input type="checkbox" id="caslConsent" required />
+                <label for="caslConsent"
+                  >I agree to receive follow-up emails and communications from
+                  CarBrokerCanada regarding my vehicle request. You can
+                  unsubscribe at any time.
+                  <span class="required">*</span></label
+                >
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="termsConsent" required />
+                <label for="termsConsent"
+                  >I have read and agree to the
+                  <a href="#terms" onclick="showLegal('terms')"
+                    >Terms &amp; Conditions</a
+                  >
+                  and
+                  <a href="#refund" onclick="showLegal('refund')"
+                    >Refund Policy</a
+                  >, including that the $500 fee is non-refundable except if
+                  CarBrokerCanada is unable to source my vehicle.
+                  <span class="required">*</span></label
+                >
+              </div>
+
+              <!-- PAYMENT SECTION -->
+              <div class="payment-section" id="paymentSection">
+                <div class="payment-summary">
+                  <h4>Your Fee Today: <span>$500</span></h4>
+                  <ul>
+                    <li>Dedicated broker assigned to your case</li>
+                    <li>Canada-wide dealer outreach &amp; negotiation</li>
+                    <li>Full Deal Summary with price breakdown</li>
+                    <li>Paperwork coordination &amp; DocuSign setup</li>
+                    <li>Financing referral (if requested)</li>
+                  </ul>
+                  <p class="refund-note">
+                    If we are unable to source or secure your vehicle, you will
+                    receive a full refund.
+                  </p>
+                </div>
+
+                <button type="submit" class="btn-pay">
+                  Submit &amp; Pay $500 via Stripe
+                </button>
+                <p class="secure-note">
+                  &#128274; You'll be redirected to Stripe's secure checkout to
+                  complete your $500 payment. Your information is encrypted and
+                  protected.
+                </p>
+
+                <!-- DELAYED CALL BOOKING BANNER -->
+                <div class="call-banner" id="callBanner">
+                  <p>
+                    Still have questions?
+                    <strong>Book a free 15-minute call</strong> before you
+                    commit.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn-calendly"
+                    onclick="
+                      event.preventDefault();
+                      openCallModal();
+                    "
+                    >Book a Free Call</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIVE CHAT WIDGET -->
+      <div class="chat-widget" id="chatWidget">
+        <div class="chat-popup" id="chatPopup">
+          <button class="close-chat" onclick="toggleChat()">&times;</button>
+          <p>Live chat coming soon!</p>
+          <!-- PLACEHOLDER: Replace href with real Calendly link -->
+          <p>
+            In the meantime,
+            <a
+              href="#"
+              onclick="
+                event.preventDefault();
+                openCalendly();
+              "
+              style="
+                color: #d42b2b;
+                font-weight: 600;
+                text-decoration: underline;
+              "
+              >book a free call</a
+            >
+            with us.
+          </p>
+        </div>
+        <div class="chat-bubble" onclick="toggleChat()">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <div class="footer-logo">Car<span>Broker</span>Canada</div>
+              <p class="tagline">Your Dream Car. Our Expertise. Zero Stress.</p>
+              <p style="font-size: 0.85rem; margin-bottom: 12px">
+                The trusted flat-fee car buying service for Canadians coast to
+                coast.
+              </p>
+              <div class="footer-social">
+                <a href="#" aria-label="Facebook"
+                  ><svg viewBox="0 0 24 24">
+                    <path
+                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                    /></svg
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><svg viewBox="0 0 24 24">
+                    <path
+                      d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4zm2 12a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h8a2 2 0 012 2v8zm-6-7a3 3 0 100 6 3 3 0 000-6zm4.5-.5a1 1 0 100-2 1 1 0 000 2z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#signup">Get Started</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Legal</h4>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      showLegal('privacy');
+                      return false;
+                    "
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      showLegal('terms');
+                      return false;
+                    "
+                    >Terms &amp; Conditions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      showLegal('refund');
+                      return false;
+                    "
+                    >Refund Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <ul>
+                <!-- PLACEHOLDER: Replace href with real Calendly link -->
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      event.preventDefault();
+                      openCalendly();
+                    "
+                    >Book a Call</a
+                  >
+                </li>
+                <li>
+                  <a href="#signup">Submit a Request</a>
+                </li>
+                <li>CarBrokerCanada.ca</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bc-notice">
+            &#9888;&#65039; Please note: CarBrokerCanada is currently unable to
+            accept clients from British Columbia. We apologize for the
+            inconvenience and hope to serve BC residents in the future.
+          </div>
+          <div class="footer-bottom">
+            &copy; 2025 CarBrokerCanada.ca — All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- end main-content -->
+
+    <!-- ========== THANK YOU PAGE ========== -->
+    <div class="thank-you" id="thankYou">
+      <div class="thank-you-card">
+        <div class="thank-you-icon">&#9989;</div>
+        <h1>You're All Set — We're On It!</h1>
+        <p class="subtext">
+          Your request has been received and your $500 payment is confirmed.
+          Here's what happens next:
+        </p>
+        <div class="thank-you-steps" id="thankYouSteps">
+          <!-- Steps injected by JS based on selected option -->
+        </div>
+        <div class="email-note">
+          &#128231; You'll receive a confirmation email within the next few
+          minutes. Expect a call or email from your dedicated broker within 24
+          hours.
+        </div>
+        <p class="refund-reminder">
+          Reminder: If CarBrokerCanada is unable to source or secure your
+          requested vehicle, your full $500 payment will be refunded.
+        </p>
+        <div class="social-share">
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https://carbrokercanada.ca"
+            target="_blank"
+            class="fb"
+            >&#128077; Share on Facebook</a
+          >
+          <a href="https://www.instagram.com/" target="_blank" class="ig"
+            >&#128247; Follow on Instagram</a
+          >
+        </div>
+        <button class="btn-home" onclick="returnHome()">Return to Home</button>
+      </div>
+    </div>
+
+    <!-- ========== LEGAL PAGES ========== -->
+    <div class="legal-page" id="privacyPage">
+      <h1>Privacy Policy</h1>
+      <p><strong>Effective Date:</strong> January 1, 2025</p>
+      <p>
+        CarBrokerCanada ("we," "us," or "our") is committed to protecting the
+        privacy of our clients and website visitors. This Privacy Policy
+        explains how we collect, use, and safeguard your personal information.
+      </p>
+      <h2>Information We Collect</h2>
+      <p>
+        We collect personal information you provide directly to us, including
+        your name, email address, phone number, city, province, and vehicle
+        preferences when you submit our contact form.
+      </p>
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>To provide our car brokerage services</li>
+        <li>To communicate with you about your vehicle search</li>
+        <li>To connect you with financing partners (with your consent)</li>
+        <li>To send you service-related communications</li>
+        <li>To improve our website and services</li>
+      </ul>
+      <h2>Information Sharing</h2>
+      <p>
+        We do not sell your personal information. We may share your information
+        with dealerships and financing partners as necessary to provide our
+        services, and with service providers who assist us in operating our
+        website.
+      </p>
+      <h2>Data Security</h2>
+      <p>
+        We implement appropriate technical and organizational measures to
+        protect your personal information against unauthorized access,
+        alteration, disclosure, or destruction.
+      </p>
+      <h2>CASL Compliance</h2>
+      <p>
+        We comply with Canada's Anti-Spam Legislation (CASL). We will only send
+        you commercial electronic messages with your express consent, and you
+        may unsubscribe at any time.
+      </p>
+      <h2>Contact Us</h2>
+      <p>
+        If you have questions about this Privacy Policy, please contact us by
+        booking a call or submitting a request through our website.
+      </p>
+      <button class="legal-back" onclick="hideLegal()">← Back to Site</button>
+    </div>
+
+    <div class="legal-page" id="termsPage">
+      <h1>Terms &amp; Conditions</h1>
+      <p><strong>Effective Date:</strong> January 1, 2025</p>
+      <p>
+        These Terms and Conditions govern your use of CarBrokerCanada's services
+        and website. By using our services, you agree to these terms.
+      </p>
+      <h2>Services</h2>
+      <p>
+        CarBrokerCanada provides car brokerage services, connecting clients with
+        dealerships across Canada to source, negotiate, and coordinate the
+        purchase of vehicles. We act on your behalf but are not a dealership,
+        lender, or financial institution.
+      </p>
+      <h2>Fees</h2>
+      <p>
+        <strong>Option A:</strong> A flat fee of $500 CAD is charged at the time
+        of service request. This fee covers dealer outreach, price negotiation,
+        deal coordination, and DocuSign paperwork setup.
+      </p>
+      <p>
+        <strong>Option B:</strong> A fee of $500 CAD is charged at the time of
+        service request, with an additional $500 CAD charged when the vehicle is
+        ready for pickup at the dealership.
+      </p>
+      <h2>Refund Policy</h2>
+      <p>
+        The $500 fee is non-refundable in all circumstances except one: if
+        CarBrokerCanada is unable to source or secure the requested vehicle, the
+        full amount paid will be refunded. Please see our full Refund Policy for
+        details.
+      </p>
+      <h2>Client Responsibilities</h2>
+      <ul>
+        <li>
+          Provide accurate and complete information in the service request form
+        </li>
+        <li>Respond to broker communications in a timely manner</li>
+        <li>Complete in-person vehicle pickup at the dealership as required</li>
+        <li>
+          Review and approve all deal summaries before purchase documents are
+          prepared
+        </li>
+      </ul>
+      <h2>Financing Referrals</h2>
+      <p>
+        CarBrokerCanada may refer clients to third-party lending partners. We
+        are not responsible for the terms, rates, or conditions offered by these
+        lenders. All financing agreements are between the client and the lender.
+      </p>
+      <h2>Limitation of Liability</h2>
+      <p>
+        CarBrokerCanada acts as an intermediary between clients and dealerships.
+        We are not liable for the condition of vehicles, dealer
+        misrepresentations, or post-purchase issues. Our liability is limited to
+        the fees paid for our services.
+      </p>
+      <h2>Service Area</h2>
+      <p>
+        Our services are currently available in all Canadian provinces and
+        territories except British Columbia.
+      </p>
+      <h2>Changes to Terms</h2>
+      <p>
+        We reserve the right to update these Terms and Conditions at any time.
+        Changes will be posted on this page with an updated effective date.
+      </p>
+      <button class="legal-back" onclick="hideLegal()">← Back to Site</button>
+    </div>
+
+    <div class="legal-page" id="refundPage">
+      <h1>Refund Policy</h1>
+      <p><strong>Effective Date:</strong> January 1, 2025</p>
+      <h2>General Policy</h2>
+      <p>
+        The $500 service fee paid to CarBrokerCanada is non-refundable. This fee
+        compensates your dedicated broker for the time and effort invested in
+        dealer outreach, price research, negotiation, and coordination on your
+        behalf.
+      </p>
+      <h2>Exception — Vehicle Not Sourced</h2>
+      <p>
+        There is one exception to this policy:
+        <strong
+          >if CarBrokerCanada is unable to source or secure the requested
+          vehicle, the full amount paid will be refunded.</strong
+        >
+      </p>
+      <p>This applies in the following situations:</p>
+      <ul>
+        <li>
+          The specific vehicle requested (make, model, trim, color) is not
+          available from any dealership in our network
+        </li>
+        <li>
+          A deal cannot be reached with any dealership on terms that meet the
+          client's approved criteria
+        </li>
+        <li>
+          CarBrokerCanada determines that the vehicle cannot be secured within a
+          reasonable timeframe
+        </li>
+      </ul>
+      <h2>Refund Process</h2>
+      <p>
+        If a refund is warranted, CarBrokerCanada will notify the client and
+        process the refund to the original payment method within 10 business
+        days.
+      </p>
+      <h2>Non-Refundable Situations</h2>
+      <p>The fee is not refundable if:</p>
+      <ul>
+        <li>The client changes their mind after the service has begun</li>
+        <li>The client rejects a deal that meets their stated criteria</li>
+        <li>The client becomes unresponsive during the process</li>
+        <li>
+          The client provides inaccurate information that affects the search
+        </li>
+      </ul>
+      <h2>Option B — Second Payment</h2>
+      <p>
+        For Option B clients, the second $500 fee is charged only when the
+        vehicle is confirmed and ready for pickup. If the vehicle cannot be
+        sourced, neither the first nor second payment will be retained.
+      </p>
+      <h2>Contact</h2>
+      <p>
+        For refund inquiries, please book a call or submit a request through our
+        website.
+      </p>
+      <button class="legal-back" onclick="hideLegal()">← Back to Site</button>
+    </div>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+      // REPLACE: EmailJS Service ID, Template ID, and Public Key — sign up free at emailjs.com
+      (function () {
+        emailjs.init("_DzTP202r-8IhY1-6");
+      })();
+
+      // ===== NAVIGATION =====
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+        document.getElementById("hamburger").classList.toggle("active");
+      }
+      function closeNav() {
+        document.getElementById("navLinks").classList.remove("open");
+        document.getElementById("hamburger").classList.remove("active");
+      }
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 50);
+      });
+
+      // ===== FADE-IN ANIMATIONS =====
+      const fadeObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
+      );
+
+      document.querySelectorAll(".fade-in").forEach(function (el) {
+        fadeObserver.observe(el);
+      });
+
+      // ===== FAQ ACCORDION =====
+      function toggleFAQ(btn) {
+        var item = btn.parentElement;
+        var wasOpen = item.classList.contains("open");
+        document.querySelectorAll(".faq-item").forEach(function (i) {
+          i.classList.remove("open");
+        });
+        if (!wasOpen) item.classList.add("open");
+      }
+
+      // ===== SERVICE OPTION TOGGLE =====
+      function handleServiceChange() {
+        var selected = document.querySelector('input[name="service"]:checked');
+        var aFields = document.getElementById("optionAFields");
+        var bFields = document.getElementById("optionBFields");
+        document.getElementById("radioA").classList.remove("selected");
+        document.getElementById("radioB").classList.remove("selected");
+        aFields.classList.remove("active");
+        bFields.classList.remove("active");
+
+        if (selected) {
+          if (selected.value === "option-a") {
+            aFields.classList.add("active");
+            document.getElementById("radioA").classList.add("selected");
+          } else {
+            bFields.classList.add("active");
+            document.getElementById("radioB").classList.add("selected");
+          }
+        }
+      }
+
+      // ===== PROVINCE BC CHECK =====
+      function handleProvinceChange() {
+        var select = document.getElementById("provinceSelect");
+        var warning = document.getElementById("bcWarning");
+        // BC is disabled so it can't normally be selected, but just in case
+        if (select.value === "BC") {
+          warning.classList.add("show");
+          select.value = "";
+        } else {
+          warning.classList.remove("show");
+        }
+      }
+
+      // ===== TRADE-IN TOGGLE =====
+      function handleTradeInChange() {
+        var select = document.getElementById("tradeInSelect");
+        var fields = document.getElementById("tradeInFields");
+        if (select.value === "yes") {
+          fields.classList.add("active");
+        } else {
+          fields.classList.remove("active");
+          // Reset owe money field when trade-in is toggled off
+          document.getElementById("tradeOweSelect").value = "";
+          document.getElementById("tradeOweAmountGroup").style.display = "none";
+        }
+      }
+
+      // ===== TRADE-IN OWE MONEY TOGGLE =====
+      function handleTradeOweChange() {
+        var select = document.getElementById("tradeOweSelect");
+        var amountGroup = document.getElementById("tradeOweAmountGroup");
+        if (select.value === "yes") {
+          amountGroup.style.display = "block";
+        } else {
+          amountGroup.style.display = "none";
+        }
+      }
+
+      // ===== DELAYED CALL BANNER =====
+      var callBannerShown = false;
+      var callBannerTimeout = null;
+
+      var paymentObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting && !callBannerShown) {
+              callBannerTimeout = setTimeout(function () {
+                document.getElementById("callBanner").classList.add("visible");
+                callBannerShown = true;
+              }, 45000); // 45 seconds
+            } else if (!entry.isIntersecting && callBannerTimeout) {
+              clearTimeout(callBannerTimeout);
+            }
+          });
+        },
+        { threshold: 0.3 },
+      );
+
+      paymentObserver.observe(document.getElementById("paymentSection"));
+
+      // ===== CHAT WIDGET =====
+      function toggleChat() {
+        document.getElementById("chatPopup").classList.toggle("visible");
+      }
+
+      // ===== BOOK A CALL =====
+      function openCalendly() {
+        openCallModal();
+      }
+
+      // ===== FORM SUBMISSION =====
+      function handleSubmit(e) {
+        e.preventDefault();
+
+        var form = document.getElementById("brokerForm");
+        var formData = new FormData(form);
+        var data = {};
+        formData.forEach(function (value, key) {
+          data[key] = value;
+        });
+
+        // Add checkbox values
+        data.casl_consent = document.getElementById("caslConsent").checked
+          ? "Yes"
+          : "No";
+        data.terms_consent = document.getElementById("termsConsent").checked
+          ? "Yes"
+          : "No";
+
+        // Build formatted email body
+        var emailBody = "NEW CAR BROKER REQUEST\n";
+        emailBody += "========================\n\n";
+        emailBody +=
+          "SERVICE: " +
+          (data.service === "option-a"
+            ? "Option A — I Know What I Want ($500)"
+            : "Option B — Help Me Find the Right Car ($500 + $500)") +
+          "\n\n";
+
+        if (data.service === "option-a") {
+          emailBody += "VEHICLE DETAILS:\n";
+          emailBody += "  Brand: " + (data.car_brand || "N/A") + "\n";
+          emailBody += "  Model: " + (data.car_model || "N/A") + "\n";
+          emailBody += "  Trim: " + (data.car_trim || "N/A") + "\n";
+          emailBody += "  Color: " + (data.car_color || "N/A") + "\n\n";
+        } else {
+          emailBody += "VEHICLE PREFERENCES:\n";
+          emailBody += "  Type: " + (data.vehicle_type || "N/A") + "\n";
+          emailBody +=
+            "  Must-Have Features: " +
+            (data.must_have_features || "N/A") +
+            "\n";
+          emailBody += "  Open Brands: " + (data.open_brands || "N/A") + "\n\n";
+        }
+
+        emailBody += "PERSONAL INFO:\n";
+        emailBody += "  Name: " + (data.full_name || "N/A") + "\n";
+        emailBody += "  City: " + (data.city || "N/A") + "\n";
+        emailBody += "  Province: " + (data.province || "N/A") + "\n";
+        emailBody += "  Phone: " + (data.phone || "N/A") + "\n";
+        emailBody += "  Email: " + (data.email || "N/A") + "\n\n";
+
+        emailBody += "PURCHASE DETAILS:\n";
+        emailBody += "  Budget: " + (data.budget || "N/A") + "\n";
+        emailBody += "  New/Used: " + (data.new_used || "N/A") + "\n";
+        emailBody += "  Financing: " + (data.financing || "N/A") + "\n";
+        emailBody += "  Trade-In: " + (data.trade_in || "N/A") + "\n";
+
+        if (data.trade_in === "yes") {
+          emailBody += "  Trade-In Year: " + (data.trade_year || "N/A") + "\n";
+          emailBody += "  Trade-In Make: " + (data.trade_make || "N/A") + "\n";
+          emailBody +=
+            "  Trade-In Model: " + (data.trade_model || "N/A") + "\n";
+          emailBody += "  Trade-In KMs: " + (data.trade_kms || "N/A") + "\n";
+          emailBody +=
+            "  Owes Money on Trade: " + (data.trade_owe || "N/A") + "\n";
+          if (data.trade_owe === "yes") {
+            emailBody +=
+              "  Amount Owing: " + (data.trade_owe_amount || "N/A") + "\n";
+          }
+        }
+
+        emailBody += "  Timeline: " + (data.timeline || "N/A") + "\n";
+        emailBody +=
+          "  Referral Source: " + (data.referral_source || "N/A") + "\n";
+        emailBody += "  Notes: " + (data.notes || "N/A") + "\n\n";
+
+        emailBody += "CONSENT:\n";
+        emailBody += "  CASL Consent: " + data.casl_consent + "\n";
+        emailBody += "  Terms Accepted: " + data.terms_consent + "\n";
+
+        // REPLACE: EmailJS Service ID, Template ID — sign up free at emailjs.com
+        var templateParams = {
+          to_email: "carbrokercanada@gmail.com",
+          from_name: data.full_name,
+          from_email: data.email,
+          message: emailBody,
+          subject:
+            "New " +
+            (data.service === "option-a" ? "Option A" : "Option B") +
+            " Request from " +
+            data.full_name,
+        };
+
+        // REPLACE: EmailJS Service ID, Template ID — sign up free at emailjs.com
+        emailjs
+          .send("service_mz1gpq2", "template_hjf9pi8", templateParams)
+          .then(
+            function () {
+              // Email sent — redirect to Stripe checkout
+              window.location.href =
+                "https://buy.stripe.com/14AcN56iA2Zb8d2gD4cbC0c";
+            },
+            function (error) {
+              console.log("EmailJS error:", error);
+              // Still redirect to Stripe even if email fails
+              window.location.href =
+                "https://buy.stripe.com/14AcN56iA2Zb8d2gD4cbC0c";
+            },
+          );
+
+        return false;
+      }
+
+      // ===== THANK YOU PAGE =====
+      function showThankYou(service) {
+        var stepsContainer = document.getElementById("thankYouSteps");
+        var steps;
+
+        if (service === "option-a") {
+          steps = [
+            "Your dedicated broker reviews your vehicle request (make, model, trim, color).",
+            "You receive a call or email within 24 hours to confirm all details.",
+            "Your broker contacts dealerships across Canada to find your vehicle.",
+            "The best price and terms are negotiated on your behalf.",
+            "You receive a Deal Summary with a full price breakdown for your approval.",
+            "Once approved, all paperwork is coordinated with the dealer.",
+            "You sign purchase documents via DocuSign from home.",
+            "You visit the dealership in person to pick up your new vehicle!",
+          ];
+        } else {
+          steps = [
+            "Your dedicated broker reviews your needs, budget, and preferences.",
+            "You receive a call or email within 24 hours to begin your vehicle consultation.",
+            "Your broker provides personalized vehicle recommendations and comparisons.",
+            "Test drives are coordinated if needed.",
+            "Once you've chosen your vehicle, your broker contacts dealerships across Canada.",
+            "The best price and terms are negotiated on your behalf.",
+            "You receive a Deal Summary for your approval.",
+            "All paperwork is coordinated — you sign via DocuSign from home.",
+            "Your second $500 fee is charged when the vehicle is ready.",
+            "You visit the dealership in person to pick up your new vehicle!",
+          ];
+        }
+
+        stepsContainer.innerHTML =
+          "<ol>" +
+          steps
+            .map(function (s) {
+              return "<li>" + s + "</li>";
+            })
+            .join("") +
+          "</ol>";
+
+        document.getElementById("mainContent").style.display = "none";
+        document.getElementById("thankYou").classList.add("active");
+        window.scrollTo(0, 0);
+      }
+
+      function returnHome() {
+        document.getElementById("thankYou").classList.remove("active");
+        document.getElementById("mainContent").style.display = "";
+        document.getElementById("brokerForm").reset();
+        document.getElementById("optionAFields").classList.remove("active");
+        document.getElementById("optionBFields").classList.remove("active");
+        document.getElementById("tradeInFields").classList.remove("active");
+        document.getElementById("radioA").classList.remove("selected");
+        document.getElementById("radioB").classList.remove("selected");
+        window.scrollTo(0, 0);
+      }
+
+      // ===== LEGAL PAGES =====
+      function showLegal(page) {
+        document.getElementById("mainContent").style.display = "none";
+        document.getElementById("thankYou").classList.remove("active");
+        document.querySelectorAll(".legal-page").forEach(function (p) {
+          p.classList.remove("active");
+        });
+        document.getElementById(page + "Page").classList.add("active");
+        window.scrollTo(0, 0);
+      }
+
+      function hideLegal() {
+        document.querySelectorAll(".legal-page").forEach(function (p) {
+          p.classList.remove("active");
+        });
+        document.getElementById("mainContent").style.display = "";
+        window.scrollTo(0, 0);
+      }
+    </script>
+
+    <!-- BOOK A CALL MODAL -->
+    <div class="call-modal-overlay" id="callModal">
+      <div class="call-modal">
+        <button class="close-modal" onclick="closeCallModal()">&times;</button>
+        <div id="callFormContent">
+          <h3>Book a Free Call</h3>
+          <p class="modal-sub">
+            Tell us when works best and we'll reach out to you.
+          </p>
+          <form id="callForm" onsubmit="return handleCallSubmit(event);">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input
+                type="text"
+                name="call_name"
+                required
+                placeholder="Your full name"
+              />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input
+                type="tel"
+                name="call_phone"
+                required
+                placeholder="(555) 123-4567"
+              />
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input
+                type="email"
+                name="call_email"
+                required
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label>Preferred Day *</label>
+              <input type="date" name="call_date" required />
+            </div>
+            <div class="form-group">
+              <label>Preferred Time *</label>
+              <select name="call_time" required>
+                <option value="">Select a time...</option>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="9:30 AM">9:30 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="10:30 AM">10:30 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="11:30 AM">11:30 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="12:30 PM">12:30 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="1:30 PM">1:30 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="2:30 PM">2:30 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="3:30 PM">3:30 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="4:30 PM">4:30 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>What's this about? (optional)</label>
+              <textarea
+                name="call_notes"
+                placeholder="Quick note about what you'd like to discuss..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-send-call">
+              Send Call Request
+            </button>
+          </form>
+        </div>
+        <div class="success-msg" id="callSuccess">
+          <div class="check">&#9989;</div>
+          <h3>Call Request Sent!</h3>
+          <p>We'll confirm your call time within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ===== BOOK A CALL MODAL =====
+      function openCallModal() {
+        document.getElementById("callModal").classList.add("visible");
+        document.body.style.overflow = "hidden";
+      }
+      function closeCallModal() {
+        document.getElementById("callModal").classList.remove("visible");
+        document.body.style.overflow = "";
+        // Reset after close
+        setTimeout(function () {
+          document.getElementById("callFormContent").style.display = "";
+          document.getElementById("callSuccess").style.display = "none";
+          document.getElementById("callForm").reset();
+        }, 300);
+      }
+      // Close on overlay click
+      document
+        .getElementById("callModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) closeCallModal();
+        });
+
+      function handleCallSubmit(e) {
+        e.preventDefault();
+        var form = document.getElementById("callForm");
+        var formData = new FormData(form);
+        var data = {};
+        formData.forEach(function (v, k) {
+          data[k] = v;
+        });
+
+        var emailBody = "CALL REQUEST\n";
+        emailBody += "========================\n\n";
+        emailBody += "Name: " + data.call_name + "\n";
+        emailBody += "Phone: " + data.call_phone + "\n";
+        emailBody += "Email: " + data.call_email + "\n";
+        emailBody += "Preferred Date: " + data.call_date + "\n";
+        emailBody += "Preferred Time: " + data.call_time + "\n";
+        emailBody += "Notes: " + (data.call_notes || "None") + "\n";
+
+        var templateParams = {
+          to_email: "carbrokercanada@gmail.com",
+          from_name: data.call_name,
+          from_email: data.call_email,
+          message: emailBody,
+          subject:
+            "Call Request from " +
+            data.call_name +
+            " — " +
+            data.call_date +
+            " at " +
+            data.call_time,
+        };
+
+        emailjs
+          .send("service_mz1gpq2", "template_hjf9pi8", templateParams)
+          .then(
+            function () {
+              document.getElementById("callFormContent").style.display = "none";
+              document.getElementById("callSuccess").style.display = "block";
+            },
+            function (error) {
+              console.log("EmailJS error:", error);
+              document.getElementById("callFormContent").style.display = "none";
+              document.getElementById("callSuccess").style.display = "block";
+            },
+          );
+        return false;
+      }
+    </script>
+  </body>
+</html>
