@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2307172e'/><text x='50%25' y='50%25' text-anchor='middle' dominant-baseline='central' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23c8a96e'>CB</text></svg>"
+    />
+    <title>Page Not Found | CarBrokerCanada</title>
+    <meta name="robots" content="noindex" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <style>
+      .error-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 24px 80px;
+        text-align: center;
+      }
+      .error-card {
+        max-width: 550px;
+        background: #fff;
+        padding: 60px 48px;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(7, 23, 46, 0.08);
+      }
+      .error-code {
+        font-family: "Playfair Display", serif;
+        font-size: 5rem;
+        font-weight: 800;
+        color: #07172e;
+        line-height: 1;
+        margin-bottom: 12px;
+      }
+      .error-code span {
+        color: #d42b2b;
+      }
+      .error-card h1 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+        color: #07172e;
+      }
+      .error-card p {
+        color: #555;
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+        line-height: 1.7;
+      }
+      .error-links {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn-home {
+        display: inline-block;
+        padding: 14px 32px;
+        background: #d42b2b;
+        color: #fff;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        transition:
+          background 0.3s,
+          transform 0.2s;
+      }
+      .btn-home:hover {
+        background: #b82424;
+        transform: translateY(-2px);
+      }
+      .btn-guides {
+        display: inline-block;
+        padding: 14px 32px;
+        background: #07172e;
+        color: #fff;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        transition:
+          background 0.3s,
+          transform 0.2s;
+      }
+      .btn-guides:hover {
+        background: #132d52;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="https://carbrokercanada.ca" class="nav-logo"
+          >Car<span>Broker</span>Canada</a
+        >
+        <div class="nav-links" id="navLinks">
+          <a
+            href="https://carbrokercanada.ca/#how-it-works"
+            onclick="closeNav()"
+            >How It Works</a
+          >
+          <a href="https://carbrokercanada.ca/#services" onclick="closeNav()"
+            >Our Services</a
+          >
+          <a href="https://carbrokercanada.ca/#about" onclick="closeNav()"
+            >About</a
+          >
+          <a
+            href="https://carbrokercanada.ca/#testimonials"
+            onclick="closeNav()"
+            >Testimonials</a
+          >
+          <a href="https://carbrokercanada.ca/#faq" onclick="closeNav()">FAQ</a>
+          <a
+            href="https://carbrokercanada.ca/#signup"
+            class="nav-book-call"
+            onclick="closeNav()"
+            >Book a Call</a
+          >
+          <a
+            href="https://carbrokercanada.ca/#signup"
+            class="nav-cta"
+            onclick="closeNav()"
+            >Get Started</a
+          >
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="error-page">
+      <div class="error-card">
+        <div class="error-code">4<span>0</span>4</div>
+        <h1>Page Not Found</h1>
+        <p>
+          The page you're looking for doesn't exist or has been moved. Let's get
+          you back on track.
+        </p>
+        <div class="error-links">
+          <a href="https://carbrokercanada.ca" class="btn-home">Go Home</a>
+          <a href="https://carbrokercanada.ca/#signup" class="btn-guides"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>
