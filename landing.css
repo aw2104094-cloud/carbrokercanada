@@ -1,0 +1,317 @@
+/* ========== LANDING PAGE STYLES — CarBrokerCanada ========== */
+
+/* ========== BREADCRUMB ========== */
+.breadcrumb {
+  padding: 88px 24px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  color: #888;
+}
+.breadcrumb a {
+  color: #d42b2b;
+  transition: color 0.3s;
+}
+.breadcrumb a:hover {
+  color: #07172e;
+}
+
+/* ========== LANDING HERO ========== */
+.landing-hero {
+  background: linear-gradient(135deg, #07172e 0%, #132d52 100%);
+  padding: 80px 24px 60px;
+  text-align: center;
+}
+.landing-hero h1 {
+  color: #fff;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  max-width: 800px;
+  margin: 0 auto 16px;
+}
+.landing-hero .landing-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ========== ARTICLE BODY ========== */
+.landing-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+.landing-body h2 {
+  font-size: 1.6rem;
+  margin: 48px 0 16px;
+  color: #07172e;
+}
+.landing-body h2:first-child {
+  margin-top: 0;
+}
+.landing-body h3 {
+  font-size: 1.2rem;
+  margin: 32px 0 12px;
+  color: #07172e;
+}
+.landing-body p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+.landing-body ul,
+.landing-body ol {
+  margin: 0 0 20px 24px;
+  list-style: disc;
+}
+.landing-body ol {
+  list-style: decimal;
+}
+.landing-body li {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+.landing-body strong {
+  color: #07172e;
+}
+
+/* ========== TIP / INFO BOX ========== */
+.tip-box {
+  background: linear-gradient(135deg, #07172e, #132d52);
+  color: #fff;
+  padding: 28px 32px;
+  border-radius: 12px;
+  margin: 32px 0;
+}
+.tip-box h3 {
+  color: #c8a96e;
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+}
+.tip-box p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0;
+}
+
+/* ========== COMPARISON TABLE ========== */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0 32px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.comparison-table thead {
+  background: #07172e;
+  color: #fff;
+}
+.comparison-table th {
+  padding: 14px 20px;
+  text-align: left;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.comparison-table td {
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  color: #444;
+  border-bottom: 1px solid #e0dbd3;
+}
+.comparison-table tbody tr:nth-child(even) {
+  background: #f9f8f5;
+}
+.comparison-table tbody tr:hover {
+  background: #f0ede7;
+}
+
+/* ========== INLINE CTA ========== */
+.inline-cta {
+  background: #f9f8f5;
+  border: 2px solid #e0dbd3;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  margin: 40px 0;
+}
+.inline-cta h3 {
+  font-size: 1.3rem;
+  margin: 0 0 8px;
+  color: #07172e;
+}
+.inline-cta p {
+  color: #555;
+  margin-bottom: 20px;
+}
+.inline-cta .btn-primary {
+  font-size: 0.95rem;
+  padding: 14px 32px;
+}
+
+/* ========== BOTTOM CTA SECTION ========== */
+.landing-cta {
+  background: linear-gradient(135deg, #07172e, #132d52);
+  padding: 80px 24px;
+  text-align: center;
+}
+.landing-cta h2 {
+  color: #fff;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 12px;
+}
+.landing-cta p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.05rem;
+  max-width: 550px;
+  margin: 0 auto 28px;
+}
+
+/* ========== RELATED ARTICLES ========== */
+.related-articles {
+  padding: 80px 24px;
+  background: #fff;
+}
+.related-articles h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #07172e;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.related-card {
+  background: #f5f3ef;
+  border-radius: 12px;
+  padding: 28px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(7, 23, 46, 0.1);
+}
+.related-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: #07172e;
+  line-height: 1.4;
+}
+.related-card p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.related-card .read-more {
+  color: #d42b2b;
+  font-weight: 600;
+  font-size: 0.88rem;
+  transition: color 0.3s;
+}
+.related-card .read-more:hover {
+  color: #07172e;
+}
+
+/* ========== FAQ SECTION (Landing) ========== */
+.landing-faq {
+  margin: 48px 0 0;
+}
+.landing-faq h2 {
+  margin-bottom: 24px;
+}
+.faq-item {
+  background: #f9f8f5;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e0dbd3;
+}
+.faq-question {
+  width: 100%;
+  padding: 18px 24px;
+  background: none;
+  border: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #07172e;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  transition: color 0.3s;
+}
+.faq-question:hover {
+  color: #d42b2b;
+}
+.faq-question .faq-icon {
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  color: #c8a96e;
+}
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease,
+    padding 0.3s ease;
+}
+.faq-item.open .faq-answer {
+  max-height: 500px;
+}
+.faq-answer-inner {
+  padding: 0 24px 18px;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ========== NUMBERED STEPS ========== */
+.steps-list {
+  counter-reset: steps;
+  list-style: none;
+  margin: 0 0 24px 0;
+}
+.steps-list li {
+  counter-increment: steps;
+  padding: 14px 0 14px 52px;
+  position: relative;
+  border-bottom: 1px solid #e0dbd3;
+}
+.steps-list li::before {
+  content: counter(steps);
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 36px;
+  height: 36px;
+  background: #07172e;
+  color: #c8a96e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+}

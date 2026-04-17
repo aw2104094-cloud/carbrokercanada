@@ -1,0 +1,314 @@
+/* ========== SHARED STYLES — CarBrokerCanada ========== */
+/* Used by SEO landing pages. index.html retains its own inline styles. */
+
+/* ========== RESET & BASE ========== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #07172e;
+  background: #f5f3ef;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ========== ANIMATIONS ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== NAVIGATION ========== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(7, 23, 46, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 0 24px;
+  transition: box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+.nav-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+.nav-logo span {
+  color: #d42b2b;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav-links a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #c8a96e;
+}
+.nav-book-call {
+  color: #c8a96e !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+.nav-book-call:hover {
+  color: #fff !important;
+}
+.nav-cta {
+  background: #d42b2b;
+  color: #fff !important;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+}
+.nav-cta:hover {
+  background: #b82424;
+  transform: translateY(-1px);
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #07172e;
+    flex-direction: column;
+    padding: 100px 32px 32px;
+    gap: 24px;
+    transition: right 0.3s ease;
+  }
+  .nav-links.open {
+    right: 0;
+  }
+  .nav-links a {
+    font-size: 1.05rem;
+  }
+}
+
+/* ========== BUTTONS ========== */
+.btn-primary {
+  display: inline-block;
+  background: #d42b2b;
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+}
+.btn-primary:hover {
+  background: #b82424;
+  transform: translateY(-2px);
+}
+.btn-outline {
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s;
+}
+.btn-outline:hover {
+  border-color: #c8a96e;
+  color: #c8a96e;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: #07172e;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 60px 0 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.footer-brand .footer-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.footer-brand .footer-logo span {
+  color: #d42b2b;
+}
+.footer-brand .tagline {
+  font-size: 0.88rem;
+  color: #c8a96e;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.footer h4 {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.footer ul li {
+  margin-bottom: 8px;
+}
+.footer ul a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.88rem;
+  transition: color 0.3s;
+}
+.footer ul a:hover {
+  color: #c8a96e;
+}
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.footer-social a:hover {
+  background: #d42b2b;
+}
+.footer-social svg {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+.footer-bc-notice {
+  background: rgba(255, 211, 102, 0.1);
+  border: 1px solid rgba(255, 211, 102, 0.2);
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  font-size: 0.82rem;
+  color: #ffd666;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+/* ========== UTILS ========== */
+.hidden {
+  display: none !important;
+}
