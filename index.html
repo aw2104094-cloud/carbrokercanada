@@ -64,34 +64,10 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What is a car broker and how does this work?",
+            "name": "Why do I pay $500 upfront?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A car broker is a licensed professional who works on your behalf to find, negotiate, and secure the purchase of a vehicle. Instead of spending your weekends visiting dealerships and haggling over prices, you hire us to do the heavy lifting. We leverage our industry relationships and negotiation experience to get you a better deal than you'd likely get on your own — all for a simple flat fee."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between your two services?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "\"I Know What I Want\" ($500 flat fee) is for clients who already know the exact make, model, trim, and color they want. We handle the dealer outreach, negotiation, paperwork, and coordination. \"Help Me Find the Right Car\" ($500 upfront + $500 on delivery) is for clients who need help figuring out which vehicle is right for them. We provide personalized recommendations, comparisons, and test drive coordination — then handle everything from there. The second $500 is only charged when your vehicle is ready for pickup."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why do I pay a fee upfront?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The upfront fee ensures we can dedicate real time and resources to your search from day one. Broker work involves hours of dealer outreach, price research, and negotiation — all before a deal is even signed. The $500 fee keeps our service accessible while ensuring you get a dedicated broker who's fully invested in your purchase."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is the fee refundable?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The $500 fee is non-refundable in all circumstances except one: if CarBrokerCanada is unable to source or secure the requested vehicle, the full amount paid will be refunded. This protects you in the rare case that your specific vehicle cannot be found or the deal cannot be completed through no fault of your own."
+              "text": "Because real broker work — dealer outreach, price research, back-and-forth negotiation — costs us hours from day one. The upfront fee buys you a dedicated broker, not a lead generator. It also means we don't take kickbacks from dealers, which is how we keep our advice honest. If we can't source your vehicle, you get the full $500 back."
             }
           },
           {
@@ -99,7 +75,31 @@
             "name": "What if you can't find my car?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "If we are unable to source or secure the vehicle you've requested, you will receive a full refund of all fees paid. This is our guarantee — you only pay if we deliver results."
+              "text": "You get every dollar back. That's the deal — in writing on the form, in our refund policy, and on this page. We only win when you drive home in the car you asked for."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the fee refundable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — if CarBrokerCanada is unable to source or secure your requested vehicle, the full $500 is refunded. Otherwise the fee covers the work already done on your behalf (hours of dealer outreach, price research, and negotiation). You'll see the same terms again in the consent box on the form."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What exactly does a car broker do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A licensed professional who works for you, not the dealer. Instead of spending your weekends visiting showrooms and haggling, you hire us to do the heavy lifting: dealer outreach, price negotiation, paperwork coordination — all for one flat fee, with no markup or hidden commissions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between your two services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "\"I already know the car I want\" ($500 flat) is for clients who know the exact make, model, trim, and colour. We handle the dealer outreach, negotiation, paperwork, and coordination. \"I need help deciding first\" ($500 upfront + $500 on delivery) is for clients who want help choosing the right vehicle — personalised recommendations, side-by-side comparisons, and test drive coordination, then everything in the first service. The second $500 only charges when your car is ready for pickup."
             }
           },
           {
@@ -107,15 +107,15 @@
             "name": "How long does the process take?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Most \"I Know What I Want\" deals are completed within 1–3 weeks, depending on vehicle availability and dealer responsiveness. \"Help Me Find the Right Car\" may take a bit longer due to the consultation and recommendation phase. We'll keep you updated throughout the process and always work as quickly as possible without cutting corners."
+              "text": "Most \"I already know the car I want\" deals close in 1–3 weeks, depending on vehicle availability and how quickly dealers respond. \"I need help deciding first\" runs a bit longer because of the consultation phase. We keep you posted the whole way."
             }
           },
           {
             "@type": "Question",
-            "name": "Do I have to go to the dealership at all?",
+            "name": "Do I ever have to set foot in a dealership?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes — but only once, and only to pick up your vehicle. All purchase documents are signed via DocuSign from the comfort of your home. The in-person pickup is required because most major Canadian banks and lenders mandate it for vehicle financing and registration purposes. This is standard practice across the industry, and we'll coordinate everything so it's as smooth as possible."
+              "text": "Once. For pickup. That's it. All purchase documents are signed via DocuSign from your phone or laptop. The in-person pickup is required by Canadian lenders for financing and registration — it's standard, not us being lazy. We coordinate it so the dealership trip is as quick as possible."
             }
           },
           {
@@ -463,7 +463,38 @@
         display: flex;
         gap: 16px;
         flex-wrap: wrap;
-        margin-bottom: 48px;
+        margin-bottom: 16px;
+      }
+      .hero-microcopy {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+        margin-bottom: 36px;
+        max-width: 580px;
+      }
+      .btn-microcopy {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 0.85rem;
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+      .section-cta-block {
+        text-align: center;
+        margin-top: 48px;
+      }
+      .section-cta-block .btn-primary {
+        margin: 0 6px 8px;
+      }
+      .section-cta-block .btn-outline {
+        border-color: rgba(0, 0, 0, 0.25);
+        color: #1a1a1a;
+        margin: 0 6px 8px;
+      }
+      .section-cta-block .btn-outline:hover {
+        border-color: #d42b2b;
+        color: #d42b2b;
+      }
+      .section-cta-block .btn-microcopy {
+        margin-top: 14px;
       }
       .btn-primary {
         display: inline-block;
@@ -612,6 +643,12 @@
         font-size: 0.85rem;
         font-weight: 500;
       }
+      .service-card .card-intro {
+        color: rgba(0, 0, 0, 0.72);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
       .service-card ul {
         margin-bottom: 32px;
       }
@@ -733,6 +770,57 @@
         color: #07172e;
       }
 
+      /* ========== GUARANTEE / RISK-REVERSAL ========== */
+      .guarantee {
+        background: #f6f3ec;
+        padding: 80px 0;
+      }
+      .guarantee .section-title {
+        margin-bottom: 12px;
+      }
+      .guarantee .section-subtitle {
+        margin-bottom: 48px;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      .guarantee-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+      @media (max-width: 900px) {
+        .guarantee-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 500px) {
+        .guarantee-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .guarantee-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 28px 24px;
+        border-top: 4px solid #c8a96e;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+      }
+      .guarantee-card h3 {
+        font-size: 1.1rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #07172e;
+      }
+      .guarantee-card p {
+        font-size: 0.92rem;
+        color: #555;
+        line-height: 1.6;
+      }
+
       /* ========== WHY CHOOSE US ========== */
       .why-us {
         background: #07172e;
@@ -820,6 +908,20 @@
         color: #07172e;
         font-weight: 600;
       }
+      .about-cta {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .btn-outline-dark {
+        border-color: rgba(0, 0, 0, 0.3);
+        color: #1a1a1a;
+      }
+      .btn-outline-dark:hover {
+        border-color: #d42b2b;
+        color: #d42b2b;
+      }
 
       /* ========== FINANCING CALLOUT ========== */
       .financing-callout {
@@ -861,6 +963,13 @@
         position: absolute;
         left: 0;
         color: #c8a96e;
+      }
+      .financing-note {
+        color: #c8a96e !important;
+        font-style: italic;
+        font-size: 0.9rem !important;
+        margin-top: 18px !important;
+        margin-bottom: 0 !important;
       }
 
       /* ========== TESTIMONIALS ========== */
@@ -1056,6 +1165,31 @@
         color: #555;
         font-size: 0.93rem;
         line-height: 1.7;
+      }
+      .faq-cta {
+        text-align: center;
+        margin-top: 56px;
+        padding: 36px 24px;
+        background: #fff;
+        border-radius: 12px;
+        border-top: 4px solid #c8a96e;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+      }
+      .faq-cta-lead {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #07172e;
+        margin-bottom: 20px;
+      }
+      .faq-cta-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+      .faq-cta .btn-microcopy {
+        margin-top: 6px;
       }
 
       /* ========== SIGN-UP FORM ========== */
@@ -1356,6 +1490,11 @@
         font-size: 0.82rem;
         color: #888;
         margin-top: 12px;
+      }
+      .secure-note-detail {
+        margin-top: 6px;
+        font-size: 0.78rem;
+        color: #999;
       }
 
       /* ========== DELAYED CALL BANNER ========== */
@@ -1879,7 +2018,7 @@
               >Book a Call</a
             >
             <a href="#signup" class="nav-cta" onclick="closeNav()"
-              >Get Started</a
+              >Get My Car</a
             >
           </div>
           <div class="hamburger" id="hamburger" onclick="toggleNav()">
@@ -1896,16 +2035,18 @@
           aria-label="Luxury car on a scenic Canadian highway"
         ></div>
         <div class="hero-content">
-          <h1>
-            We Find, Negotiate &amp; Secure Your <em>Perfect Canadian Car.</em>
-          </h1>
+          <h1>Stop Haggling. <em>Start Driving.</em></h1>
           <p class="hero-sub">
-            Flat-fee service. All provinces except BC. Zero dealership stress.
+            Tell us the car you want. We find it, negotiate it, and hand you the
+            keys. Flat $500 fee. No dealership visits until pickup day.
           </p>
           <div class="hero-btns">
-            <a href="#signup" class="btn-primary">Get Started</a>
+            <a href="#signup" class="btn-primary">Find My Car for $500</a>
             <a href="#how-it-works" class="btn-outline">See How It Works</a>
           </div>
+          <p class="hero-microcopy">
+            Full refund if we can't source your vehicle. No hidden fees, ever.
+          </p>
           <div class="trust-bar">
             <span><span class="dot"></span> 500+ Canadians Helped</span>
             <span
@@ -1920,46 +2061,70 @@
       <!-- SERVICE OPTIONS -->
       <section class="services" id="services">
         <div class="container">
-          <h2 class="section-title fade-in">Two Ways We Can Help</h2>
+          <h2 class="section-title fade-in">Which One Sounds Like You?</h2>
           <p class="section-subtitle fade-in">
-            Whether you know exactly what you want or need expert guidance —
-            we've got you covered.
+            Same hands-on broker. Same flat-fee model. Pick the path that
+            matches where you are today.
           </p>
           <div class="service-cards">
             <div class="service-card service-card-a fade-in">
               <span class="service-tag">Most Popular</span>
-              <h3>"I Know What I Want"</h3>
+              <h3>"I already know the car I want"</h3>
               <div class="price">$500 <small>flat fee</small></div>
+              <p class="card-intro">
+                You've done the research. You know the make, model, trim and
+                colour. You just don't want to spend your Saturday in a showroom
+                getting upsold.
+              </p>
               <ul>
-                <li>You tell us the exact make, model, trim &amp; color</li>
-                <li>We contact dealers across Canada on your behalf</li>
-                <li>We negotiate the best price and terms</li>
-                <li>We send you a full Deal Summary for approval</li>
-                <li>We coordinate all paperwork with the dealer</li>
-                <li>You sign everything via DocuSign from home</li>
-                <li>You pick up your vehicle at the dealership</li>
-                <li>Financing referrals included if needed</li>
+                <li>Dealer outreach across every province we serve</li>
+                <li>Head-to-head price negotiation on your behalf</li>
+                <li>One-page Deal Summary for your approval</li>
+                <li>All paperwork via DocuSign — sign from your couch</li>
+                <li>Financing referrals included (no markup, no obligation)</li>
+                <li>You pick up the keys at the dealership</li>
               </ul>
-              <a href="#signup" class="btn-card">Get Started</a>
+              <a href="#signup" class="btn-card">Start My $500 Search</a>
+              <p class="btn-microcopy">
+                Refunded in full if we can't source your exact car.
+              </p>
             </div>
             <div class="service-card service-card-b fade-in">
               <span class="service-tag">Full Guidance</span>
-              <h3>"Help Me Find the Right Car"</h3>
+              <h3>"I need help deciding first"</h3>
               <div class="price">
-                $500 <small>now</small> + $500 <small>on delivery</small>
+                $500 <small>today</small> + $500 <small>on delivery</small>
               </div>
+              <p class="card-intro">
+                You know roughly what you need — a family SUV, a commuter, a
+                truck that tows — but you don't want to guess. We walk you
+                through the options, then handle the purchase.
+              </p>
               <ul>
-                <li>We help you choose the right vehicle for your needs</li>
-                <li>Personalized recommendations &amp; comparisons</li>
-                <li>Test drive coordination if needed</li>
-                <li>Everything included in "I Know What I Want"</li>
-                <li>Full dealer outreach &amp; price negotiation</li>
-                <li>Deal Summary for your approval</li>
-                <li>DocuSign from home — just show up to pick up</li>
-                <li>Second $500 charged only when vehicle is ready</li>
+                <li>
+                  Personalised shortlist matched to your budget &amp; needs
+                </li>
+                <li>
+                  Side-by-side comparisons (no brand bias — we don't work for
+                  dealers)
+                </li>
+                <li>Test drive coordination in your city</li>
+                <li>Everything in "I already know the car I want"</li>
+                <li>DocuSign from home — show up only to take delivery</li>
+                <li>The second $500 charges only when your car is ready</li>
               </ul>
-              <a href="#signup" class="btn-card">Get Started</a>
+              <a href="#signup" class="btn-card">Get My Shortlist</a>
+              <p class="btn-microcopy">
+                You only pay the second $500 once your car is ready for pickup.
+              </p>
             </div>
+          </div>
+          <div class="section-cta-block fade-in">
+            <a href="#signup" class="btn-primary">Get Started for $500</a>
+            <p class="btn-microcopy">
+              Not sure which one fits? Start the form — your broker will walk
+              you through it on the first call.
+            </p>
           </div>
         </div>
       </section>
@@ -1969,99 +2134,153 @@
         <div class="container">
           <h2 class="section-title fade-in">How It Works</h2>
           <p class="section-subtitle fade-in">
-            Pay a simple flat fee to get started. Here's the step-by-step
-            process for "I Know What I Want":
+            From signup to keys in 1–3 weeks. Step 1 is free — you only pay once
+            you're ready to put us to work.
           </p>
           <div class="timeline">
             <div class="timeline-step fade-in">
               <div class="timeline-num">1</div>
               <div class="timeline-content">
-                <h3>Submit Your Request &amp; Pay $500</h3>
+                <h3>Tell Us What You Want — Free</h3>
                 <p>
-                  Fill out our simple form with your vehicle details and pay the
-                  flat fee to get started.
+                  Fill out the 90-second form with your vehicle details. No
+                  payment yet, no commitment.
                 </p>
               </div>
             </div>
             <div class="timeline-step fade-in">
               <div class="timeline-num">2</div>
               <div class="timeline-content">
-                <h3>Broker Contacts You Within 24 Hours</h3>
+                <h3>Lock It In With $500</h3>
                 <p>
-                  Your dedicated broker reaches out to confirm every vehicle
-                  detail — make, model, trim, color, and preferences.
+                  Pay the flat fee and your dedicated broker activates the same
+                  day. Full refund if we can't source your vehicle.
                 </p>
               </div>
             </div>
             <div class="timeline-step fade-in">
               <div class="timeline-num">3</div>
               <div class="timeline-content">
-                <h3>We Contact Dealers Across Canada</h3>
+                <h3>Broker Calls You Within 24 Hours</h3>
                 <p>
-                  We reach out to our network of dealerships nationwide to find
-                  your exact vehicle at the best possible price.
+                  Your broker confirms every detail — make, model, trim, colour,
+                  options, timing — so nothing gets missed.
                 </p>
               </div>
             </div>
             <div class="timeline-step fade-in">
               <div class="timeline-num">4</div>
               <div class="timeline-content">
-                <h3>We Negotiate the Best Price &amp; Terms</h3>
+                <h3>We Reach Out to Dealers Nationwide</h3>
                 <p>
-                  Using 15 years of industry experience, we negotiate
-                  aggressively on your behalf — saving you thousands.
+                  We contact our dealer network across the provinces we serve to
+                  source your exact vehicle.
                 </p>
               </div>
             </div>
             <div class="timeline-step fade-in">
               <div class="timeline-num">5</div>
               <div class="timeline-content">
-                <h3>Deal Summary Sent for Your Approval</h3>
+                <h3>We Negotiate. You Stay Out Of It.</h3>
                 <p>
-                  We send you a clear breakdown — price, dealer info, fees, and
-                  everything you need to make an informed decision.
+                  15 years of dealer relationships and negotiation experience go
+                  to work — without you sitting across the desk.
                 </p>
               </div>
             </div>
             <div class="timeline-step fade-in">
               <div class="timeline-num">6</div>
               <div class="timeline-content">
-                <h3>You Approve the Deal</h3>
+                <h3>You Get a One-Page Deal Summary</h3>
                 <p>
-                  Review the summary and give us the green light. No pressure —
-                  it's your call.
+                  Final price, dealer, fees, and everything you need in one
+                  place. Approve it, ask questions, or walk — your call.
                 </p>
               </div>
             </div>
             <div class="timeline-step fade-in">
               <div class="timeline-num">7</div>
               <div class="timeline-content">
-                <h3>Sign Documents via DocuSign from Home</h3>
+                <h3>Sign From Home Via DocuSign</h3>
                 <p>
-                  All purchase paperwork is coordinated with the dealer. You
-                  sign electronically from the comfort of your home.
+                  We coordinate the paperwork with the dealer. You sign from
+                  your phone or laptop — no printing, no scanning.
                 </p>
               </div>
             </div>
             <div class="timeline-step fade-in">
               <div class="timeline-num">8</div>
               <div class="timeline-content">
-                <h3>Pick Up Your Vehicle at the Dealership</h3>
+                <h3>Pick Up Your Keys</h3>
                 <p>
-                  Head to the dealership to collect your new car. Most Canadian
-                  banks and lenders require in-person pickup — this is standard
-                  practice.
+                  One trip to the dealership to take delivery — required by
+                  Canadian lenders for financing and registration. That's it.
                 </p>
               </div>
             </div>
           </div>
           <div class="timeline-note fade-in">
-            <strong>"Help Me Find the Right Car"</strong> follows the same
+            <strong>"I need help deciding first"</strong> follows the same
             process with a
-            <strong>full vehicle consultation phase</strong> added at the start
-            to help you find the perfect car. Your broker provides personalized
-            recommendations, comparisons, and test drive coordination before
-            moving into the negotiation steps above.
+            <strong>full vehicle consultation phase</strong> added up front.
+            Your broker provides personalised recommendations, side-by-side
+            comparisons, and test drive coordination before we move into
+            negotiation.
+          </div>
+          <div class="section-cta-block fade-in">
+            <a href="#signup" class="btn-primary">Start Step 1 — It's Free</a>
+            <p class="btn-microcopy">
+              No payment until you choose a service. Takes about 90 seconds.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GUARANTEE / RISK REVERSAL -->
+      <section class="guarantee" id="guarantee">
+        <div class="container">
+          <h2 class="section-title fade-in">
+            Here's What You're Risking: Nothing.
+          </h2>
+          <p class="section-subtitle fade-in">
+            We built this service for Canadians who hate dealership games. The
+            guarantees below exist so you never feel like you're taking one.
+          </p>
+          <div class="guarantee-grid">
+            <div class="guarantee-card fade-in">
+              <h3>We Find It or It's Free</h3>
+              <p>
+                If we can't source or secure your vehicle, every dollar of the
+                $500 fee comes back to you. In writing.
+              </p>
+            </div>
+            <div class="guarantee-card fade-in">
+              <h3>No Markup, No Kickbacks</h3>
+              <p>
+                We don't take dealer commissions. You see the same invoice we
+                do, and our $500 fee is everything we earn.
+              </p>
+            </div>
+            <div class="guarantee-card fade-in">
+              <h3>You Approve Before Anything Is Signed</h3>
+              <p>
+                Nothing moves forward without your green light on the Deal
+                Summary. Walk away at that stage at no extra cost.
+              </p>
+            </div>
+            <div class="guarantee-card fade-in">
+              <h3>Licensed, Insured, Canadian</h3>
+              <p>
+                15 years in the trade. Every client gets a named broker, not a
+                call centre. Paperwork available on request.
+              </p>
+            </div>
+          </div>
+          <div class="section-cta-block fade-in">
+            <a href="#signup" class="btn-primary">Start Risk-Free for $500</a>
+            <p class="btn-microcopy">
+              Refunded in full if we can't find your car.
+            </p>
           </div>
         </div>
       </section>
@@ -2076,54 +2295,72 @@
             class="section-subtitle fade-in"
             style="color: rgba(255, 255, 255, 0.6)"
           >
-            Real results. Real savings. Real people behind every deal.
+            Real people behind every deal. Real Canadian service. Zero
+            dealership games.
           </p>
           <div class="why-grid">
             <div class="why-card fade-in">
-              <h3>500+ Canadians Helped</h3>
+              <h3>500+ Canadians Served</h3>
               <p>
-                A growing community of satisfied clients from coast to coast.
+                A growing community of clients from coast to coast — from
+                downtown Toronto to rural Saskatchewan.
               </p>
             </div>
             <div class="why-card fade-in">
-              <h3>Expert Negotiation</h3>
+              <h3>We Negotiate Below Sticker</h3>
               <p>
-                We work to get you a fair deal below sticker price on your
-                behalf.
+                15 years of dealer relationships put to work — without you
+                sitting across the desk.
               </p>
             </div>
             <div class="why-card fade-in">
-              <h3>15 Years of Experience</h3>
+              <h3>15 Years in the Trade</h3>
               <p>
-                Over a decade of dealer relationships and industry knowledge.
+                Industry insider knowledge that's hard to outmanoeuvre when
+                we're on your side of the table.
               </p>
             </div>
             <div class="why-card fade-in">
-              <h3>All Provinces &amp; Territories (excl. BC)</h3>
-              <p>We serve Canadians everywhere — from Halifax to Whitehorse.</p>
-            </div>
-            <div class="why-card fade-in">
-              <h3>No Hidden Fees — Ever</h3>
-              <p>Transparent flat-fee pricing. What you see is what you pay.</p>
-            </div>
-            <div class="why-card fade-in">
-              <h3>Dedicated Agent for Every Client</h3>
-              <p>One broker, one relationship — from start to finish.</p>
-            </div>
-            <div class="why-card fade-in">
-              <h3>Financing Referrals Available</h3>
+              <h3>Every Province Except BC</h3>
               <p>
-                We connect you with trusted Canadian lenders to simplify your
-                purchase.
+                Alberta to Newfoundland, plus Yukon, NWT and Nunavut. One
+                national service, one flat fee.
               </p>
             </div>
             <div class="why-card fade-in">
-              <h3>DocuSign from Home</h3>
+              <h3>No Hidden Fees. Ever.</h3>
               <p>
-                Sign everything electronically — just show up to pick up your
-                car.
+                What you see on this page is everything you pay us. No kickbacks
+                from dealers either.
               </p>
             </div>
+            <div class="why-card fade-in">
+              <h3>One Broker, Start to Finish</h3>
+              <p>
+                You get a named broker — not a call centre. Same person from
+                first call to pickup day.
+              </p>
+            </div>
+            <div class="why-card fade-in">
+              <h3>Financing Referrals Free</h3>
+              <p>
+                Vetted Canadian lenders ready to compete for your rate. Included
+                with every service, no extra charge.
+              </p>
+            </div>
+            <div class="why-card fade-in">
+              <h3>Sign From Your Couch</h3>
+              <p>
+                DocuSign on your phone or laptop. The dealership only sees you
+                once — at pickup.
+              </p>
+            </div>
+          </div>
+          <div class="section-cta-block fade-in">
+            <a href="#signup" class="btn-primary">Get My Car for $500</a>
+            <p class="btn-microcopy" style="color: rgba(255, 255, 255, 0.7)">
+              Full refund if we can't source your vehicle.
+            </p>
           </div>
         </div>
       </section>
@@ -2143,9 +2380,9 @@
               <p>
                 After 15 years in the Canadian automotive industry, I've seen
                 every trick in the book. I've watched hardworking families walk
-                into dealerships and leave paying thousands more than they
-                should. I started CarBrokerCanada because I believed there had
-                to be a better way.
+                into dealerships and leave paying more than they should — and
+                more stressed than they ever should have been. I started
+                CarBrokerCanada because there had to be a better way.
               </p>
               <p>
                 My mission is simple: take the stress, the games, and the
@@ -2155,13 +2392,31 @@
                 negotiating a fair price to handling all the paperwork.
               </p>
               <p>
-                I take pride in serving clients coast to coast, from downtown
-                Toronto to rural Saskatchewan. Whether you're buying your first
-                car or your tenth, I treat every deal like it's my own money on
-                the line. Full transparency. No surprises. That's my promise to
-                you.
+                I serve clients coast to coast, from downtown Toronto to rural
+                Saskatchewan. Whether it's your first car or your tenth, I treat
+                every deal like it's my own money on the line. Full
+                transparency. No surprises. That's my promise to you.
+              </p>
+              <p>
+                If you've read this far, you already know why most Canadians
+                dread buying a car. Let me take that off your plate. One form,
+                one fee, one phone call — and you're done with dealerships.
               </p>
               <div class="about-sig">— The CarBrokerCanada Team</div>
+              <div class="about-cta">
+                <a
+                  href="#"
+                  class="btn-primary"
+                  onclick="
+                    event.preventDefault();
+                    openCalendly();
+                  "
+                  >Book a Free 15-Minute Call</a
+                >
+                <a href="#signup" class="btn-outline btn-outline-dark"
+                  >Or Get Started for $500</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -2172,19 +2427,23 @@
         <div class="container">
           <div class="financing-inner fade-in">
             <div class="financing-text">
-              <h2>Need Financing? We'll Connect You.</h2>
+              <h2>Need Financing? We've Already Done the Legwork.</h2>
               <p>
-                CarBrokerCanada partners with trusted Canadian lenders to help
-                you secure competitive financing. We're not a lender — we're
-                your connector. We save you the time and stress of shopping
-                around for rates on your own.
+                CarBrokerCanada partners with trusted Canadian lenders so you
+                don't have to spend a weekend phoning your bank, your credit
+                union, and three more besides. Many clients tell us they got a
+                better rate through our partners than their own bank offered.
               </p>
               <ul>
-                <li>Access to vetted Canadian lending partners</li>
-                <li>Competitive rates for new and used vehicles</li>
-                <li>No obligation — just a helpful referral</li>
-                <li>Included as part of our service at no extra charge</li>
+                <li>Vetted Canadian lending partners</li>
+                <li>Competitive rates on new and used vehicles</li>
+                <li>Zero obligation — it's a referral, not a contract</li>
+                <li>Free with every brokered deal</li>
               </ul>
+              <p class="financing-note">
+                Already part of the service — just tick the financing box on the
+                form.
+              </p>
             </div>
           </div>
         </div>
@@ -2272,6 +2531,13 @@
               </div>
             </div>
           </div>
+          <div class="section-cta-block fade-in">
+            <a href="#signup" class="btn-primary">Start My $500 Search</a>
+            <p class="btn-microcopy">
+              Full refund if we can't find your car. No commitment until you're
+              ready.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -2292,8 +2558,8 @@
               <div class="blog-body">
                 <h3>How to Get the Best Deal on a Car in Canada</h3>
                 <p>
-                  Insider strategies that save Canadian car buyers thousands on
-                  every purchase — from research to signing.
+                  Insider strategies that help Canadian car buyers stop
+                  overpaying — from research to signing.
                 </p>
                 <span class="btn-read">Read Guide</span>
               </div>
@@ -2333,82 +2599,29 @@
       <!-- FAQ -->
       <section class="faq" id="faq">
         <div class="container">
-          <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+          <h2 class="section-title fade-in">
+            Before You Book, You're Probably Wondering…
+          </h2>
           <p class="section-subtitle fade-in">
-            Everything you need to know before getting started.
+            The objections come first. Then the practical stuff. Still stuck?
+            Book a free 15-minute call.
           </p>
           <div class="faq-list">
             <div class="faq-item fade-in">
               <button class="faq-question" onclick="toggleFAQ(this)">
-                What is a car broker and how does this work?<span
-                  class="faq-icon"
-                  >+</span
-                >
+                Why do I pay $500 upfront?<span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
                 <div class="faq-answer-inner">
-                  A car broker is a licensed professional who works on your
-                  behalf to find, negotiate, and secure the purchase of a
-                  vehicle. Instead of spending your weekends visiting
-                  dealerships and haggling over prices, you hire us to do the
-                  heavy lifting. We leverage our industry relationships and
-                  negotiation experience to get you a better deal than you'd
-                  likely get on your own — all for a simple flat fee.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item fade-in">
-              <button class="faq-question" onclick="toggleFAQ(this)">
-                What is the difference between your two services?<span
-                  class="faq-icon"
-                  >+</span
-                >
-              </button>
-              <div class="faq-answer">
-                <div class="faq-answer-inner">
-                  <strong>"I Know What I Want" ($500 flat fee)</strong> is for
-                  clients who already know the exact make, model, trim, and
-                  color they want. We handle the dealer outreach, negotiation,
-                  paperwork, and coordination.
+                  Because real broker work — dealer outreach, price research,
+                  back-and-forth negotiation — costs us hours from day one. The
+                  upfront fee buys you a dedicated broker, not a lead generator.
+                  It also means we don't take kickbacks from dealers, which is
+                  how we keep our advice honest.
                   <strong
-                    >"Help Me Find the Right Car" ($500 upfront + $500 on
-                    delivery)</strong
+                    >If we can't source your vehicle, you get the full $500
+                    back.</strong
                   >
-                  is for clients who need help figuring out which vehicle is
-                  right for them. We provide personalized recommendations,
-                  comparisons, and test drive coordination — then handle
-                  everything from there. The second $500 is only charged when
-                  your vehicle is ready for pickup.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item fade-in">
-              <button class="faq-question" onclick="toggleFAQ(this)">
-                Why do I pay a fee upfront?<span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <div class="faq-answer-inner">
-                  The upfront fee ensures we can dedicate real time and
-                  resources to your search from day one. Broker work involves
-                  hours of dealer outreach, price research, and negotiation —
-                  all before a deal is even signed. The $500 fee keeps our
-                  service accessible while ensuring you get a dedicated broker
-                  who's fully invested in your purchase.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item fade-in">
-              <button class="faq-question" onclick="toggleFAQ(this)">
-                Is the fee refundable?<span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <div class="faq-answer-inner">
-                  The $500 fee is non-refundable in all circumstances except
-                  one: if CarBrokerCanada is unable to source or secure the
-                  requested vehicle, the full amount paid will be refunded. This
-                  protects you in the rare case that your specific vehicle
-                  cannot be found or the deal cannot be completed through no
-                  fault of your own.
                 </div>
               </div>
             </div>
@@ -2418,9 +2631,64 @@
               </button>
               <div class="faq-answer">
                 <div class="faq-answer-inner">
-                  If we are unable to source or secure the vehicle you've
-                  requested, you will receive a full refund of all fees paid.
-                  This is our guarantee — you only pay if we deliver results.
+                  You get every dollar back. That's the deal — in writing on the
+                  form, in our refund policy, and on this page. We only win when
+                  you drive home in the car you asked for.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                Is the fee refundable?<span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Yes — if CarBrokerCanada is unable to source or secure your
+                  requested vehicle, the full $500 is refunded. Otherwise the
+                  fee covers the work already done on your behalf (hours of
+                  dealer outreach, price research, and negotiation). You'll see
+                  the same terms again in the consent box on the form.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                What exactly does a car broker do?<span class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  A licensed professional who works for you, not the dealer.
+                  Instead of spending your weekends visiting showrooms and
+                  haggling, you hire us to do the heavy lifting: dealer
+                  outreach, price negotiation, paperwork coordination — all for
+                  one flat fee, with no markup or hidden commissions.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-in">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                What's the difference between your two services?<span
+                  class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <strong>"I already know the car I want" ($500 flat)</strong>
+                  is for clients who know the exact make, model, trim, and
+                  colour. We handle the dealer outreach, negotiation, paperwork,
+                  and coordination.
+                  <strong
+                    >"I need help deciding first" ($500 upfront + $500 on
+                    delivery)</strong
+                  >
+                  is for clients who want help choosing the right vehicle —
+                  personalised recommendations, side-by-side comparisons, and
+                  test drive coordination, then everything in the first service.
+                  The second $500 only charges when your car is ready for
+                  pickup.
                 </div>
               </div>
             </div>
@@ -2430,30 +2698,28 @@
               </button>
               <div class="faq-answer">
                 <div class="faq-answer-inner">
-                  Most "I Know What I Want" deals are completed within 1–3
-                  weeks, depending on vehicle availability and dealer
-                  responsiveness. "Help Me Find the Right Car" may take a bit
-                  longer due to the consultation and recommendation phase. We'll
-                  keep you updated throughout the process and always work as
-                  quickly as possible without cutting corners.
+                  Most "I already know the car I want" deals close in 1–3 weeks,
+                  depending on vehicle availability and how quickly dealers
+                  respond. "I need help deciding first" runs a bit longer
+                  because of the consultation phase. We keep you posted the
+                  whole way.
                 </div>
               </div>
             </div>
             <div class="faq-item fade-in">
               <button class="faq-question" onclick="toggleFAQ(this)">
-                Do I have to go to the dealership at all?<span class="faq-icon"
+                Do I ever have to set foot in a dealership?<span
+                  class="faq-icon"
                   >+</span
                 >
               </button>
               <div class="faq-answer">
                 <div class="faq-answer-inner">
-                  Yes — but only once, and only to pick up your vehicle. All
-                  purchase documents are signed via DocuSign from the comfort of
-                  your home. The in-person pickup is required because most major
-                  Canadian banks and lenders mandate it for vehicle financing
-                  and registration purposes. This is standard practice across
-                  the industry, and we'll coordinate everything so it's as
-                  smooth as possible.
+                  Once. For pickup. That's it. All purchase documents are signed
+                  via DocuSign from your phone or laptop. The in-person pickup
+                  is required by Canadian lenders for financing and registration
+                  — it's standard, not us being lazy. We coordinate it so the
+                  dealership trip is as quick as possible.
                 </div>
               </div>
             </div>
@@ -2552,16 +2818,39 @@
               </div>
             </div>
           </div>
+          <div class="faq-cta fade-in">
+            <p class="faq-cta-lead">
+              Still have a question? That's what the free call is for.
+            </p>
+            <div class="faq-cta-buttons">
+              <a
+                href="#"
+                class="btn-primary"
+                onclick="
+                  event.preventDefault();
+                  openCalendly();
+                "
+                >Book a Free 15-Minute Call</a
+              >
+              <a href="#signup" class="btn-outline btn-outline-dark"
+                >Just Start My $500 Search</a
+              >
+            </div>
+            <p class="btn-microcopy">
+              Full refund if we can't source your vehicle. No commitment until
+              you choose a service.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- SIGN-UP FORM -->
       <section class="signup" id="signup">
         <div class="container">
-          <h2 class="section-title fade-in">Let's Find Your Car</h2>
+          <h2 class="section-title fade-in">Let's Find Your Car.</h2>
           <p class="section-subtitle fade-in">
-            Fill out the form below and your dedicated broker will be in touch
-            within 24 hours.
+            Takes about 90 seconds. Your dedicated broker calls within 24 hours.
+            You only pay once you've chosen a service.
           </p>
 
           <div class="form-container">
@@ -2989,12 +3278,15 @@
                 </div>
 
                 <button type="submit" class="btn-pay">
-                  Submit &amp; Pay $500 via Stripe
+                  Submit &amp; Activate My Broker — $500
                 </button>
                 <p class="secure-note">
+                  Secured by Stripe · Full refund if we can't source your
+                  vehicle · Your info is never sold or shared.
+                </p>
+                <p class="secure-note secure-note-detail">
                   You'll be redirected to Stripe's secure checkout to complete
-                  your $500 payment. Your information is encrypted and
-                  protected.
+                  your $500 payment. Information is encrypted end-to-end.
                 </p>
 
                 <!-- DELAYED CALL BOOKING BANNER -->
