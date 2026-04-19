@@ -1,58 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://carbrokercanada.ca</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://carbrokercanada.ca/car-broker-near-me</loc>
-    <lastmod>2026-04-17</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://carbrokercanada.ca/car-buying-service-canada</loc>
-    <lastmod>2026-04-17</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://carbrokercanada.ca/car-broker-vs-dealership</loc>
-    <lastmod>2026-04-17</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://carbrokercanada.ca/help-negotiating-car-price</loc>
-    <lastmod>2026-04-17</lastmod>
-    <priority>0.8</priority>
-  </url>
+
+  <!-- Topic landing pages -->
   <url>
     <loc>https://carbrokercanada.ca/best-way-to-buy-new-car-canada</loc>
-    <lastmod>2026-04-17</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://carbrokercanada.ca/lease-vs-finance-canada</loc>
-    <lastmod>2026-04-17</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://carbrokercanada.ca/how-to-get-best-deal-on-car</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://carbrokercanada.ca/car-broker-for-suvs-and-trucks</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-near-me</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-vs-dealership</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-buying-service-canada</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/help-negotiating-car-price</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/how-to-get-best-deal-on-car</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/lease-vs-finance-canada</loc>
+    <lastmod>2026-04-19</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://carbrokercanada.ca/no-pressure-dealership-alternative</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://carbrokercanada.ca/save-money-buying-car-canada</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Provincial landing pages -->
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-alberta</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-manitoba</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-new-brunswick</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-newfoundland</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-nova-scotia</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-ontario</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-pei</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-quebec</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-saskatchewan</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Territorial landing pages -->
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-northwest-territories</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-nunavut</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-yukon</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- City landing pages -->
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-calgary</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-edmonton</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-halifax</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-mississauga</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-montreal</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-ottawa</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-toronto</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carbrokercanada.ca/car-broker-winnipeg</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
