@@ -315,3 +315,53 @@
   font-weight: 700;
   font-size: 0.85rem;
 }
+
+/* ========== BYLINE (E-E-A-T) ========== */
+.landing-hero .byline {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.85rem;
+  margin: 16px auto 0;
+  letter-spacing: 0.02em;
+}
+
+/* ========== GUARANTEE CALLOUT ========== */
+.guarantee-box {
+  max-width: 800px;
+  margin: 48px auto 0;
+  padding: 24px 28px;
+  background: #ecf7ef;
+  border: 2px solid #2f9e5a;
+  border-radius: 12px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.guarantee-box .guarantee-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: #2f9e5a;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.guarantee-box h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  color: #1a5a36;
+}
+.guarantee-box p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #1a5a36;
+  line-height: 1.55;
+}
+@media (max-width: 600px) {
+  .guarantee-box {
+    margin: 32px 16px 0;
+  }
+}
