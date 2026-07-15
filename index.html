@@ -20,7 +20,7 @@
     <title>CarBrokerCanada — Buy Any Car in Canada, Stress-Free</title>
     <meta
       name="description"
-      content="Skip the dealership. Canada's flat-fee car broker finds, negotiates, and secures your next vehicle for $500. Full refund if we can't source it."
+      content="Skip the dealership. Canada's flat-fee car broker finds, negotiates, and secures your next vehicle for $500."
     />
     <meta
       name="keywords"
@@ -48,7 +48,7 @@
         "@type": "Organization",
         "name": "CarBrokerCanada",
         "url": "https://carbrokercanada.ca",
-        "description": "Canada's flat-fee car broker service. We find, negotiate, and secure your next vehicle for $500, with a source-or-refund guarantee.",
+        "description": "Canada's flat-fee car broker service. We find, negotiate, and secure your next vehicle for $500.",
         "areaServed": {
           "@type": "Country",
           "name": "Canada"
@@ -67,23 +67,7 @@
             "name": "Why do I pay $500 upfront?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Because real broker work — dealer outreach, price research, back-and-forth negotiation — costs us hours from day one. The upfront fee buys you a dedicated broker, not a lead generator. It also means we don't take kickbacks from dealers, which is how we keep our advice honest. If we can't source your vehicle, you get the full $500 back."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if you can't find my car?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You get every dollar back. We only earn the fee when you drive home in the car you asked for."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is the fee refundable?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes — if CarBrokerCanada is unable to source or secure your requested vehicle, the full $500 is refunded. Otherwise the fee covers the work already done on your behalf (hours of dealer outreach, price research, and negotiation). You'll see the same terms again in the consent box on the form."
+              "text": "Because real broker work — dealer outreach, price research, back-and-forth negotiation — costs us hours from day one. The upfront fee buys you a dedicated broker, not a lead generator. It also means we don't take kickbacks from dealers, which is how we keep our advice honest."
             }
           },
           {
@@ -99,7 +83,7 @@
             "name": "What's the difference between your two services?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "\"I already know the car I want\" ($500 flat) is for clients who know the exact make, model, trim, and colour. We handle the dealer outreach, negotiation, paperwork, and coordination. \"I need help deciding first\" ($500 upfront + $500 on delivery) is for clients who want help choosing the right vehicle — personalised recommendations, side-by-side comparisons, and test drive coordination, then everything in the first service. The second $500 only charges when your car is ready for pickup."
+              "text": "\"I already know the car I want\" ($500 flat) is for clients who know the exact make, model, trim, and colour. We handle the dealer outreach, negotiation, paperwork, and coordination. \"I need help deciding first\" ($1,000 flat) is for clients who want help choosing the right vehicle — personalised recommendations, side-by-side comparisons, and test drive coordination, then everything in the first service. Your full $1,000 fee is charged upfront, same timing as the other option — there is no second or later charge."
             }
           },
           {
@@ -770,7 +754,7 @@
         color: #07172e;
       }
 
-      /* ========== GUARANTEE / RISK-REVERSAL ========== */
+      /* ========== GUARANTEE / TRUST ========== */
       .guarantee {
         background: #f6f3ec;
         padding: 80px 0;
@@ -787,7 +771,7 @@
       }
       .guarantee-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 24px;
         margin-bottom: 40px;
       }
@@ -1437,13 +1421,6 @@
         color: #c8a96e;
         font-weight: 700;
       }
-      .payment-summary .refund-note {
-        font-size: 0.85rem;
-        color: #888;
-        font-style: italic;
-        padding-top: 8px;
-        border-top: 1px solid #eee;
-      }
       .mock-stripe {
         background: #fff;
         padding: 24px;
@@ -1721,12 +1698,6 @@
         margin-bottom: 24px;
         font-size: 0.9rem;
         color: #555;
-      }
-      .thank-you .refund-reminder {
-        font-size: 0.85rem;
-        color: #888;
-        font-style: italic;
-        margin-bottom: 28px;
       }
       .social-share {
         display: flex;
@@ -2044,9 +2015,7 @@
             <a href="#signup" class="btn-primary">Find My Car for $500</a>
             <a href="#how-it-works" class="btn-outline">See How It Works</a>
           </div>
-          <p class="hero-microcopy">
-            Full refund if we can't source your vehicle. No hidden fees, ever.
-          </p>
+          <p class="hero-microcopy">No hidden fees, ever.</p>
           <div class="trust-bar">
             <span><span class="dot"></span> 500+ Canadians Helped</span>
             <span
@@ -2085,16 +2054,12 @@
                 <li>You pick up the keys at the dealership</li>
               </ul>
               <a href="#signup" class="btn-card">Start My $500 Search</a>
-              <p class="btn-microcopy">
-                Refunded in full if we can't source your exact car.
-              </p>
+              <p class="btn-microcopy">One flat fee, charged upfront.</p>
             </div>
             <div class="service-card service-card-b fade-in">
               <span class="service-tag">Full Guidance</span>
               <h3>"I need help deciding first"</h3>
-              <div class="price">
-                $500 <small>today</small> + $500 <small>on delivery</small>
-              </div>
+              <div class="price">$1,000 <small>flat fee</small></div>
               <p class="card-intro">
                 You know roughly what you need — a family SUV, a commuter, a
                 truck that tows — but you don't want to guess. We walk you
@@ -2111,11 +2076,12 @@
                 <li>Test drive coordination in your city</li>
                 <li>Everything in "I already know the car I want"</li>
                 <li>DocuSign from home — show up only to take delivery</li>
-                <li>The second $500 charges only when your car is ready</li>
+                <li>Full $1,000 fee, charged upfront — nothing owed later</li>
               </ul>
               <a href="#signup" class="btn-card">Get My Shortlist</a>
               <p class="btn-microcopy">
-                You only pay the second $500 once your car is ready for pickup.
+                Your full $1,000 fee is charged today — same timing as Option A,
+                just a different total.
               </p>
             </div>
           </div>
@@ -2154,7 +2120,7 @@
                 <h3>Lock It In With $500</h3>
                 <p>
                   Pay the flat fee and your dedicated broker activates the same
-                  day. Full refund if we can't source your vehicle.
+                  day.
                 </p>
               </div>
             </div>
@@ -2236,24 +2202,15 @@
         </div>
       </section>
 
-      <!-- GUARANTEE / RISK REVERSAL -->
+      <!-- GUARANTEE / TRUST -->
       <section class="guarantee" id="guarantee">
         <div class="container">
-          <h2 class="section-title fade-in">
-            Here's What You're Risking: Nothing.
-          </h2>
+          <h2 class="section-title fade-in">What You Can Count On</h2>
           <p class="section-subtitle fade-in">
-            We built this service for Canadians who hate dealership games. The
-            guarantees below exist so you never feel like you're taking one.
+            We built this service for Canadians who hate dealership games. No
+            markup, no kickbacks, and you're always in control.
           </p>
           <div class="guarantee-grid">
-            <div class="guarantee-card fade-in">
-              <h3>We Find It or It's Free</h3>
-              <p>
-                If we can't source or secure your vehicle, every dollar of the
-                $500 fee comes back to you. In writing.
-              </p>
-            </div>
             <div class="guarantee-card fade-in">
               <h3>No Markup, No Kickbacks</h3>
               <p>
@@ -2277,10 +2234,7 @@
             </div>
           </div>
           <div class="section-cta-block fade-in">
-            <a href="#signup" class="btn-primary">Start Risk-Free for $500</a>
-            <p class="btn-microcopy">
-              Refunded in full if we can't find your car.
-            </p>
+            <a href="#signup" class="btn-primary">Get Started for $500</a>
           </div>
         </div>
       </section>
@@ -2358,9 +2312,6 @@
           </div>
           <div class="section-cta-block fade-in">
             <a href="#signup" class="btn-primary">Get My Car for $500</a>
-            <p class="btn-microcopy" style="color: rgba(255, 255, 255, 0.7)">
-              Full refund if we can't source your vehicle.
-            </p>
           </div>
         </div>
       </section>
@@ -2533,10 +2484,7 @@
           </div>
           <div class="section-cta-block fade-in">
             <a href="#signup" class="btn-primary">Start My $500 Search</a>
-            <p class="btn-microcopy">
-              Full refund if we can't find your car. No commitment until you're
-              ready.
-            </p>
+            <p class="btn-microcopy">No commitment until you're ready.</p>
           </div>
         </div>
       </section>
@@ -2618,35 +2566,6 @@
                   upfront fee buys you a dedicated broker, not a lead generator.
                   It also means we don't take kickbacks from dealers, which is
                   how we keep our advice honest.
-                  <strong
-                    >If we can't source your vehicle, you get the full $500
-                    back.</strong
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="faq-item fade-in">
-              <button class="faq-question" onclick="toggleFAQ(this)">
-                What if you can't find my car?<span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <div class="faq-answer-inner">
-                  You get every dollar back. We only earn the fee when you drive
-                  home in the car you asked for.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item fade-in">
-              <button class="faq-question" onclick="toggleFAQ(this)">
-                Is the fee refundable?<span class="faq-icon">+</span>
-              </button>
-              <div class="faq-answer">
-                <div class="faq-answer-inner">
-                  Yes — if CarBrokerCanada is unable to source or secure your
-                  requested vehicle, the full $500 is refunded. Otherwise the
-                  fee covers the work already done on your behalf (hours of
-                  dealer outreach, price research, and negotiation). You'll see
-                  the same terms again in the consent box on the form.
                 </div>
               </div>
             </div>
@@ -2679,15 +2598,12 @@
                   is for clients who know the exact make, model, trim, and
                   colour. We handle the dealer outreach, negotiation, paperwork,
                   and coordination.
-                  <strong
-                    >"I need help deciding first" ($500 upfront + $500 on
-                    delivery)</strong
-                  >
+                  <strong>"I need help deciding first" ($1,000 flat)</strong>
                   is for clients who want help choosing the right vehicle —
                   personalised recommendations, side-by-side comparisons, and
                   test drive coordination, then everything in the first service.
-                  The second $500 only charges when your car is ready for
-                  pickup.
+                  Your full $1,000 fee is charged upfront, same timing as the
+                  other option — there is no second or later charge.
                 </div>
               </div>
             </div>
@@ -2836,8 +2752,7 @@
               >
             </div>
             <p class="btn-microcopy">
-              Full refund if we can't source your vehicle. No commitment until
-              you choose a service.
+              No commitment until you choose a service.
             </p>
           </div>
         </div>
@@ -2873,8 +2788,8 @@
                 </div>
                 <div class="fee-option">
                   <h4>"Help Me Find the Right Car"</h4>
-                  <div class="fee-price">$500 + $500</div>
-                  <p>$500 now. $500 when your vehicle is ready for pickup.</p>
+                  <div class="fee-price">$1,000 flat</div>
+                  <p>One payment upfront. We handle the rest.</p>
                 </div>
               </div>
             </div>
@@ -2910,8 +2825,7 @@
                     />
                     <div class="radio-label">
                       <strong
-                        >"Help Me Find the Right Car" — $500 now + $500 on
-                        delivery</strong
+                        >"Help Me Find the Right Car" — $1,000 flat</strong
                       >
                       <span
                         >I know my budget and needs but want expert guidance
@@ -3246,23 +3160,23 @@
               <div class="checkbox-group">
                 <input type="checkbox" id="termsConsent" required />
                 <label for="termsConsent"
-                  >I have read and agree to the
+                  >I have read and agree to the CarBrokerCanada
                   <a href="#terms" onclick="showLegal('terms')"
-                    >Terms &amp; Conditions</a
+                    >Vehicle Brokerage Service Agreement</a
                   >
                   and
                   <a href="#refund" onclick="showLegal('refund')"
                     >Refund Policy</a
-                  >, including that the $500 fee is non-refundable except if
-                  CarBrokerCanada is unable to source my vehicle.
-                  <span class="required">*</span></label
+                  >, including that my fee is non-refundable. I understand the
+                  services provided, applicable fees, and responsibilities of
+                  both parties. <span class="required">*</span></label
                 >
               </div>
 
               <!-- PAYMENT SECTION -->
               <div class="payment-section" id="paymentSection">
                 <div class="payment-summary">
-                  <h4>Your Fee Today: <span>$500</span></h4>
+                  <h4>Your Fee Today: <span id="feeTodayAmount">$500</span></h4>
                   <ul>
                     <li>Dedicated broker assigned to your case</li>
                     <li>Canada-wide dealer outreach &amp; negotiation</li>
@@ -3270,22 +3184,18 @@
                     <li>Paperwork coordination &amp; DocuSign setup</li>
                     <li>Financing referral (if requested)</li>
                   </ul>
-                  <p class="refund-note">
-                    If we are unable to source or secure your vehicle, you will
-                    receive a full refund.
-                  </p>
                 </div>
 
-                <button type="submit" class="btn-pay">
+                <button type="submit" class="btn-pay" id="payButton">
                   Submit &amp; Activate My Broker — $500
                 </button>
                 <p class="secure-note">
-                  Secured by Stripe · Full refund if we can't source your
-                  vehicle · Your info is never sold or shared.
+                  Secured by Stripe · Your info is never sold or shared.
                 </p>
                 <p class="secure-note secure-note-detail">
                   You'll be redirected to Stripe's secure checkout to complete
-                  your $500 payment. Information is encrypted end-to-end.
+                  your <span id="secureAmount">$500</span> payment. Information
+                  is encrypted end-to-end.
                 </p>
 
                 <!-- DELAYED CALL BOOKING BANNER -->
@@ -3401,7 +3311,7 @@
                       showLegal('terms');
                       return false;
                     "
-                    >Terms &amp; Conditions</a
+                    >Service Agreement</a
                   >
                 </li>
                 <li>
@@ -3526,8 +3436,8 @@
         <div class="thank-you-icon">&#9989;</div>
         <h2 class="thank-you-title">You're All Set — We're On It!</h2>
         <p class="subtext">
-          Your request has been received and your $500 payment is confirmed.
-          Here's what happens next:
+          Your request has been received and your payment is confirmed. Here's
+          what happens next:
         </p>
         <div class="thank-you-steps" id="thankYouSteps">
           <!-- Steps injected by JS based on selected option -->
@@ -3536,10 +3446,6 @@
           You'll receive a confirmation email within the next few minutes.
           Expect a call or email from your dedicated broker within 24 hours.
         </div>
-        <p class="refund-reminder">
-          Reminder: If CarBrokerCanada is unable to source or secure your
-          requested vehicle, your full $500 payment will be refunded.
-        </p>
         <div class="social-share">
           <a
             href="https://www.facebook.com/sharer/sharer.php?u=https://carbrokercanada.ca"
@@ -3606,134 +3512,187 @@
     </div>
 
     <div class="legal-page" id="termsPage">
-      <h2 class="legal-title">Terms &amp; Conditions</h2>
-      <p><strong>Effective Date:</strong> January 1, 2025</p>
+      <h2 class="legal-title">Vehicle Brokerage Service Agreement</h2>
+      <p><strong>Effective Date:</strong> July 15, 2026</p>
       <p>
-        These Terms and Conditions govern your use of CarBrokerCanada's services
-        and website. By using our services, you agree to these terms.
-      </p>
-      <h2>Services</h2>
-      <p>
-        CarBrokerCanada provides car brokerage services, connecting clients with
-        dealerships across Canada to source, negotiate, and coordinate the
-        purchase of vehicles. We act on your behalf but are not a dealership,
-        lender, or financial institution.
-      </p>
-      <h2>Fees</h2>
-      <p>
-        <strong>Option A:</strong> A flat fee of $500 CAD is charged at the time
-        of service request. This fee covers dealer outreach, price negotiation,
-        deal coordination, and DocuSign paperwork setup.
+        This Vehicle Brokerage Service Agreement explains what CarBrokerCanada
+        does, what it doesn't do, and what you can expect as a client. It's
+        written in plain language on purpose — we'd rather you understand
+        exactly what you're agreeing to than bury it in legal jargon. By
+        checking the consent box at checkout, you agree to this Agreement.
       </p>
       <p>
-        <strong>Option B:</strong> A fee of $500 CAD is charged at the time of
-        service request, with an additional $500 CAD charged when the vehicle is
-        ready for pickup at the dealership.
+        CarBrokerCanada is a buyer advocate. We work for you, not a dealership —
+        we do not sell vehicles, and we are not the seller in your purchase.
       </p>
-      <h2>Refund Policy</h2>
+
+      <h2>1. Scope of Services</h2>
       <p>
-        The $500 fee is non-refundable in all circumstances except one: if
-        CarBrokerCanada is unable to source or secure the requested vehicle, the
-        full amount paid will be refunded. Please see our full Refund Policy for
-        details.
+        <strong>New Vehicle Brokerage:</strong> searching dealership inventory,
+        locating vehicles that match your requirements, contacting dealerships,
+        negotiating pricing, comparing available options, and helping you
+        complete the purchase.
       </p>
-      <h2>Client Responsibilities</h2>
+      <p>
+        <strong>Used Vehicle Search:</strong> searching the market for suitable
+        used vehicles, identifying options that match your criteria, helping you
+        compare vehicles, and negotiating with dealerships on your behalf.
+      </p>
+      <p>
+        <strong>Used vehicle inspections</strong> are not included in the
+        brokerage fee. You're responsible for arranging and paying for any
+        independent inspection. CarBrokerCanada may recommend inspection
+        providers, but does not perform inspections or guarantee vehicle
+        condition — an independent third-party inspection protects you, and we
+        strongly recommend arranging one before finalizing any used vehicle
+        purchase.
+      </p>
+
+      <h2>2. What CarBrokerCanada Does Not Provide</h2>
       <ul>
+        <li>Vehicle sales — you buy directly from the dealership</li>
+        <li>Mechanical inspections</li>
+        <li>Vehicle warranties</li>
+        <li>Financing approval</li>
+        <li>Insurance</li>
+        <li>Registration or licensing</li>
+        <li>Transportation, unless separately arranged</li>
+      </ul>
+
+      <h2>3. Client Responsibilities</h2>
+      <ul>
+        <li>Provide accurate and complete vehicle requirements</li>
+        <li>Review the options and information we provide</li>
+        <li>Make the final purchasing decision</li>
         <li>
-          Provide accurate and complete information in the service request form
-        </li>
-        <li>Respond to broker communications in a timely manner</li>
-        <li>Complete in-person vehicle pickup at the dealership as required</li>
-        <li>
-          Review and approve all deal summaries before purchase documents are
-          prepared
+          Complete purchase paperwork, financing, insurance, registration, and
+          licensing directly with the dealership and relevant providers
         </li>
       </ul>
-      <h2>Financing Referrals</h2>
+
+      <h2>4. Fees</h2>
+      <p>
+        <strong>Option A ("I already know the car I want"):</strong> a flat fee
+        of $500 CAD, charged in full at the time of your service request.
+      </p>
+      <p>
+        <strong>Option B ("I need help deciding first"):</strong> a flat fee of
+        $1,000 CAD, also charged in full at the time of your service request —
+        the same timing as Option A, just a different total.
+      </p>
+      <p>
+        Whichever option you choose, your full fee is charged once, at signup —
+        there is nothing else to pay us later.
+      </p>
+      <p>
+        The fee covers our brokerage work: research, sourcing, dealer outreach,
+        and negotiation. It does not cover the vehicle purchase price, taxes,
+        registration, licensing, inspection costs, transportation, or dealer
+        products and extended warranties — those are separate costs between you
+        and the dealership.
+      </p>
+      <p>
+        <strong>Your fee is non-refundable.</strong> It covers the brokerage
+        work performed from the moment you sign up — dealer outreach, price
+        research, negotiation, and coordination — regardless of the outcome of
+        your vehicle search. See our Refund Policy for details.
+      </p>
+
+      <h2>5. No Guarantees</h2>
+      <p>
+        CarBrokerCanada cannot guarantee specific vehicle availability, specific
+        pricing or discounts, purchase timelines, or financing approval. Every
+        vehicle has different market conditions, and our goal is to find the
+        best available opportunity — not to promise a specific outcome.
+      </p>
       <p>
         CarBrokerCanada may refer clients to third-party lending partners. We
         are not responsible for the terms, rates, or conditions offered by these
-        lenders. All financing agreements are between the client and the lender.
+        lenders — all financing agreements are between you and the lender.
       </p>
-      <h2>Limitation of Liability</h2>
+      <p>
+        Any trade-in valuation, appraisal, or purchase offer is provided by the
+        dealership or third party involved. CarBrokerCanada does not determine
+        or guarantee trade-in values.
+      </p>
+
+      <h2>6. Customer Approval Required</h2>
+      <p>
+        You maintain full control over whether you proceed with any vehicle
+        purchase. CarBrokerCanada will not finalize or complete a purchase
+        without your approval, and you are never obligated to purchase a vehicle
+        simply because we've located or negotiated an option on your behalf.
+      </p>
+
+      <h2>7. Dealership Relationship</h2>
+      <p>
+        You purchase your vehicle directly from the dealership. CarBrokerCanada
+        is an independent buyer representative — we communicate with dealerships
+        on your behalf, but we do not control dealership policies, inventory
+        availability, pricing decisions, financing approvals, or final sales
+        agreements. The dealership remains responsible for the vehicle
+        transaction.
+      </p>
+
+      <h2>8. Limitation of Liability</h2>
       <p>
         CarBrokerCanada acts as an intermediary between clients and dealerships.
         We are not liable for the condition of vehicles, dealer
         misrepresentations, or post-purchase issues. Our liability is limited to
         the fees paid for our services.
       </p>
-      <h2>Service Area</h2>
+
+      <h2>9. Service Area</h2>
       <p>
         Our services are currently available in all Canadian provinces and
         territories except British Columbia.
       </p>
-      <h2>Changes to Terms</h2>
+
+      <h2>10. Governing Law &amp; Disputes</h2>
       <p>
-        We reserve the right to update these Terms and Conditions at any time.
-        Changes will be posted on this page with an updated effective date.
+        This Agreement is governed by the laws of the Province of Saskatchewan,
+        and any disputes arising from it will be resolved under Saskatchewan
+        law.
+      </p>
+
+      <h2>11. Changes to This Agreement</h2>
+      <p>
+        We may update this Agreement from time to time. Changes will be posted
+        on this page with an updated effective date.
+      </p>
+
+      <h2>12. Acceptance</h2>
+      <p>
+        By checking the box at checkout, you confirm you have read and agree to
+        this Vehicle Brokerage Service Agreement, and understand the services
+        provided, applicable fees, and responsibilities of both parties.
       </p>
       <button class="legal-back" onclick="hideLegal()">← Back to Site</button>
     </div>
 
     <div class="legal-page" id="refundPage">
       <h2 class="legal-title">Refund Policy</h2>
-      <p><strong>Effective Date:</strong> January 1, 2025</p>
+      <p><strong>Effective Date:</strong> July 15, 2026</p>
       <h2>General Policy</h2>
       <p>
-        The $500 service fee paid to CarBrokerCanada is non-refundable. This fee
-        compensates your dedicated broker for the time and effort invested in
-        dealer outreach, price research, negotiation, and coordination on your
-        behalf.
+        The service fee paid to CarBrokerCanada is non-refundable. It
+        compensates your dedicated broker for the work performed on your behalf
+        — dealer outreach, price research, negotiation, and coordination — which
+        begins as soon as you sign up. This applies to both Option A ($500) and
+        Option B ($1,000), regardless of the outcome of your vehicle search.
       </p>
-      <h2>Exception — Vehicle Not Sourced</h2>
+      <h2>Why the Fee Is Non-Refundable</h2>
       <p>
-        There is one exception to this policy:
-        <strong
-          >if CarBrokerCanada is unable to source or secure the requested
-          vehicle, the full amount paid will be refunded.</strong
-        >
-      </p>
-      <p>This applies in the following situations:</p>
-      <ul>
-        <li>
-          The specific vehicle requested (make, model, trim, color) is not
-          available from any dealership in our network
-        </li>
-        <li>
-          A deal cannot be reached with any dealership on terms that meet the
-          client's approved criteria
-        </li>
-        <li>
-          CarBrokerCanada determines that the vehicle cannot be secured within a
-          reasonable timeframe
-        </li>
-      </ul>
-      <h2>Refund Process</h2>
-      <p>
-        If a refund is warranted, CarBrokerCanada will notify the client and
-        process the refund to the original payment method within 10 business
-        days.
-      </p>
-      <h2>Non-Refundable Situations</h2>
-      <p>The fee is not refundable if:</p>
-      <ul>
-        <li>The client changes their mind after the service has begun</li>
-        <li>The client rejects a deal that meets their stated criteria</li>
-        <li>The client becomes unresponsive during the process</li>
-        <li>
-          The client provides inaccurate information that affects the search
-        </li>
-      </ul>
-      <h2>Option B — Second Payment</h2>
-      <p>
-        For Option B clients, the second $500 fee is charged only when the
-        vehicle is confirmed and ready for pickup. If the vehicle cannot be
-        sourced, neither the first nor second payment will be retained.
+        Your broker starts working the moment your request comes in —
+        researching the market, reaching out to dealerships, and negotiating on
+        your behalf. That work has real cost whether or not a vehicle is
+        ultimately sourced, which is why the fee is non-refundable once your
+        service has begun.
       </p>
       <h2>Contact</h2>
       <p>
-        For refund inquiries, please book a call or submit a request through our
-        website.
+        For questions about this policy, please book a call or submit a request
+        through our website.
       </p>
       <button class="legal-back" onclick="hideLegal()">← Back to Site</button>
     </div>
@@ -3806,6 +3765,12 @@
             bFields.classList.add("active");
             document.getElementById("radioB").classList.add("selected");
           }
+
+          var feeAmount = selected.value === "option-b" ? "$1,000" : "$500";
+          document.getElementById("feeTodayAmount").textContent = feeAmount;
+          document.getElementById("payButton").textContent =
+            "Submit & Activate My Broker — " + feeAmount;
+          document.getElementById("secureAmount").textContent = feeAmount;
         }
       }
 
@@ -3911,7 +3876,7 @@
           "SERVICE: " +
           (data.service === "option-a"
             ? "I Know What I Want ($500)"
-            : "Help Me Find the Right Car ($500 + $500)") +
+            : "Help Me Find the Right Car ($1,000)") +
           "\n\n";
 
         if (data.service === "option-a") {
@@ -3988,13 +3953,17 @@
             function () {
               // Email sent — redirect to Stripe checkout
               window.location.href =
-                "https://buy.stripe.com/14AcN56iA2Zb8d2gD4cbC0c";
+                data.service === "option-a"
+                  ? "https://buy.stripe.com/14AcN56iA2Zb8d2gD4cbC0c" // $500
+                  : "https://buy.stripe.com/28EeVd22k7fr9h6aeGcbC0d"; // $1,000
             },
             function (error) {
               console.log("EmailJS error:", error);
               // Still redirect to Stripe even if email fails
               window.location.href =
-                "https://buy.stripe.com/14AcN56iA2Zb8d2gD4cbC0c";
+                data.service === "option-a"
+                  ? "https://buy.stripe.com/14AcN56iA2Zb8d2gD4cbC0c" // $500
+                  : "https://buy.stripe.com/28EeVd22k7fr9h6aeGcbC0d"; // $1,000
             },
           );
 
@@ -4027,7 +3996,6 @@
             "The best price and terms are negotiated on your behalf.",
             "You receive a Deal Summary for your approval.",
             "All paperwork is coordinated — you sign via DocuSign from home.",
-            "Your second $500 fee is charged when the vehicle is ready.",
             "You visit the dealership in person to pick up your new vehicle!",
           ];
         }
