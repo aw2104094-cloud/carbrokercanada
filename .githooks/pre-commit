@@ -1,0 +1,15 @@
+#!/bin/sh
+# Block commits that introduce an em dash (U+2014) into site copy/code.
+# Only checks newly-added lines in scoped files, so pre-existing dashes
+# elsewhere in a file (mid-cleanup, etc.) never block an unrelated commit.
+# Activate per clone with: git config core.hooksPath .githooks
+
+DASH=$(printf '\xe2\x80\x94')
+
+if git diff --cached -U0 -- '*.html' '*.css' '*.js' | grep -q "^+.*$DASH"; then
+    echo "error: em dash (U+2014) in staged changes. Rewrite the sentence; see CLAUDE.md."
+    git diff --cached -U0 -- '*.html' '*.css' '*.js' | grep -n "^+.*$DASH"
+    exit 1
+fi
+
+exit 0

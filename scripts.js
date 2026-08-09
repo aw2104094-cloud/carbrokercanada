@@ -1,4 +1,4 @@
-/* ========== SHARED JS — CarBrokerCanada Landing Pages ========== */
+/* ========== SHARED JS: CarBrokerCanada Landing Pages ========== */
 
 // ===== NAVIGATION =====
 function toggleNav() {
